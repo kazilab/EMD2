@@ -160,6 +160,157 @@ def _group_contrasts(rows, *, group_a, group_b, value_key, strata, family,
     return _family(result, family)
 
 
+NEOPLASIA_COLUMNS = ("CIS", "Invasion", "Sarcomatoid carcinoma")
+
+
+def _counts(row):
+    """(normal, any neoplasia) for one histology row; blank cells are zero."""
+    def n(key):
+        value = row.get(key)
+        return 0 if value in (None, "") else int(value)
+    return n("Normal"), sum(n(k) for k in NEOPLASIA_COLUMNS)
+
+
+def _mantel_haenszel(strata):
+    """CMH statistic across independent 2x2 experiments.
+
+    The outcome table is five separate experiments, and every other family in
+    this module keeps its strata apart. Pooling them into one 2x2 -- which is
+    what the source article reports -- treats experiment as ignorable. The
+    stratified statistic is given as the primary result and the pooled one is
+    carried alongside solely to reconcile with the printed value.
+    """
+    numerator = denominator = 0.0
+    for s in strata:
+        a, b = s["treated_neoplasia"], s["treated_normal"]
+        c, d = s["control_neoplasia"], s["control_normal"]
+        n = a + b + c + d
+        if n < 2:
+            continue
+        numerator += a - (a + c) * (a + b) / n
+        denominator += (a + b) * (c + d) * (a + c) * (b + d) / (n ** 2 * (n - 1))
+    if denominator <= 0:
+        return None, None
+    chi2 = numerator ** 2 / denominator
+    from scipy.stats import chi2 as chi2_dist
+    return float(chi2), float(chi2_dist.sf(chi2, 1))
+
+
+def analyse_tumour_outcome(tables):
+    """Organism-level outcome under a microbial handle (S3, S42).
+
+    SEQUENCE-LEVEL EVIDENCE, NOT A KCC SCORE. This counts animals by terminal
+    bladder histology in arms that differ by antibiotic treatment. It supports
+    the overall agent-microbiome-tumour sequence. It does not score KCC2, KCC6
+    or KCC10: there is no adduct, mutation, inflammatory or proliferation
+    measurement here, and a tumour count is an outcome rather than any of those
+    endpoints.
+
+    It is also not isolate-level attribution. Antibiotics remove the converting
+    organism and everything else, so this contrast cannot separate loss of
+    BBN conversion from any other consequence of depleting the microbiota. The
+    arms that would separate them -- the reconstructed consortia -- are
+    metabolomic at days to three weeks, not tumour studies.
+    """
+    from scipy.stats import chi2_contingency, fisher_exact
+
+    strata, order = {}, []
+    for row in tables["S3"]:
+        experiment = str(row["experiment"])
+        arm = str(row["Treatment"]).strip()
+        normal, neoplasia = _counts(row)
+        if experiment not in strata:
+            strata[experiment] = {"experiment": experiment, "source_rows": []}
+            order.append(experiment)
+        side = "treated" if arm.startswith("ABX") else "control"
+        strata[experiment][f"{side}_arm"] = arm
+        strata[experiment][f"{side}_normal"] = normal
+        strata[experiment][f"{side}_neoplasia"] = neoplasia
+        strata[experiment]["source_rows"].append(row["source_row"])
+
+    per_experiment = []
+    for key in order:
+        s = strata[key]
+        for side in ("treated", "control"):
+            total = s[f"{side}_normal"] + s[f"{side}_neoplasia"]
+            s[f"{side}_n"] = total
+            s[f"{side}_neoplasia_fraction"] = (s[f"{side}_neoplasia"] / total
+                                               if total else None)
+        per_experiment.append(s)
+
+    chi2_cmh, p_cmh = _mantel_haenszel(per_experiment)
+    same_direction = sum(
+        1 for s in per_experiment
+        if s["control_neoplasia_fraction"] is not None
+        and s["treated_neoplasia_fraction"] is not None
+        and s["control_neoplasia_fraction"] > s["treated_neoplasia_fraction"])
+
+    pooled = {side: [sum(s[f"{side}_normal"] for s in per_experiment),
+                     sum(s[f"{side}_neoplasia"] for s in per_experiment)]
+              for side in ("treated", "control")}
+    table = [pooled["treated"], pooled["control"]]
+    p_pooled_yates = float(chi2_contingency(table, correction=True)[1])
+
+    s3 = {
+        "agent": "BBN", "source_table": "S3",
+        "n_experiments": len(per_experiment),
+        "per_experiment": per_experiment,
+        "pooled_treated": {"arm": per_experiment[0]["treated_arm"],
+                           "normal": pooled["treated"][0],
+                           "neoplasia": pooled["treated"][1],
+                           "n": sum(pooled["treated"]),
+                           "neoplasia_fraction": pooled["treated"][1] / sum(pooled["treated"])},
+        "pooled_control": {"arm": per_experiment[0]["control_arm"],
+                           "normal": pooled["control"][0],
+                           "neoplasia": pooled["control"][1],
+                           "n": sum(pooled["control"]),
+                           "neoplasia_fraction": pooled["control"][1] / sum(pooled["control"])},
+        "primary_test": "Cochran-Mantel-Haenszel, stratified by experiment",
+        "cmh_chi2": chi2_cmh, "p_value": p_cmh,
+        "experiments_favouring_control": same_direction,
+        "pooled_yates_p_for_reconciliation": p_pooled_yates,
+        "pooled_note": ("The source article reports a pooled chi-square of "
+                        "P = 1.6e-5, reproduced here by the Yates-corrected "
+                        "pooled test. It is given only to reconcile with the "
+                        "printed value; the stratified statistic is primary."),
+    }
+
+    row_a, row_b = tables["S42"][0], tables["S42"][1]
+    a_normal, a_neo = _counts(row_a)
+    b_normal, b_neo = _counts(row_b)
+    s42 = {
+        "agent": "EHBN", "source_table": "S42", "n_experiments": 1,
+        "treated": {"arm": str(row_a["Treatment"]).strip(), "normal": a_normal,
+                    "neoplasia": a_neo, "n": a_normal + a_neo,
+                    "neoplasia_fraction": a_neo / (a_normal + a_neo)},
+        "control": {"arm": str(row_b["Treatment"]).strip(), "normal": b_normal,
+                    "neoplasia": b_neo, "n": b_normal + b_neo,
+                    "neoplasia_fraction": b_neo / (b_normal + b_neo)},
+        "primary_test": "Fisher exact, two-sided",
+        "p_value": float(fisher_exact([[a_normal, a_neo], [b_normal, b_neo]])[1]),
+        "source_rows": [row_a["source_row"], row_b["source_row"]],
+        "note": ("A single experiment in a second agent. It corroborates the "
+                 "direction of the S3 result; it is not an independent "
+                 "confirmation of the BBN finding and its n is small."),
+    }
+
+    rows = _family([s3, s42], "Organism-level outcome: two agents")
+    return {
+        "evidence_class": "sequence-level outcome under a microbial handle",
+        "scores_kcc": None,
+        "results": rows,
+        "does_not_establish": [
+            "KCC2: no adduct or mutation measurement in any arm.",
+            "KCC6: no inflammatory endpoint in any arm.",
+            "KCC10: a tumour count is an outcome, not a measurement of altered "
+            "proliferation, cell death or nutrient supply.",
+            "Isolate-level attribution: antibiotics remove the converting "
+            "organism together with everything else, and the reconstructed "
+            "consortium arms are metabolomic rather than tumour studies.",
+        ],
+    }
+
+
 def analyse(data=None, *, n_bootstrap=N_BOOTSTRAP):
     bundled_input = data is None
     data = load_data() if bundled_input else data
@@ -252,12 +403,13 @@ def analyse(data=None, *, n_bootstrap=N_BOOTSTRAP):
             "tests": "two-sided independent-label permutation or paired donor sign-flip; Holm within stated families",
             "zeros": "reported zeros retained; no invented LOD or pseudocount",
             "strata": "collection week and analytical batch kept separate; no pooled longitudinal test",
-            "interpretation": "No cross-compartment unity cutoff, kinetic calibration, external validation or functional KCC response is inferred.",
+            "interpretation": "No cross-compartment unity cutoff, kinetic calibration, external validation or functional KCC response is inferred. Cross-matrix ratios are provisional because matrix-specific normalisation is unresolved, which is prior to any model argument about a cutoff.",
         },
         "consortium": consortium, "human_culture": culture, "human_donors": donors,
         "human_complete_sensitivity": culture_complete, "urine": families["S5"], "bladder": families["S4"],
         "germ_free_controls": gf, "acute": acute, "isolate_signals": isolate,
         "published_consortium_contrasts": [r for r in tables["S40"] if r["term"] == "Group" and r[".y."] == "BCPN"],
+        "tumour_outcome": analyse_tumour_outcome(tables),
         "audits": audits,
         "kinetic_calibration": {"performed": False,
             "reason": "The acute table has unresolved protocol/count and published-statistic discrepancies; relative signals lack physical scale, and the existing mechanism requires structural revision. Experimental contrasts are estimated without fitting physiological rates."},
@@ -265,6 +417,86 @@ def analyse(data=None, *, n_bootstrap=N_BOOTSTRAP):
                   "KCC1": "Metabolic activation-related evidence; not a new assay of electrophilicity",
                   "KCC6_KCC7_KCC8_KCC10": "Require corresponding functional host-response endpoints, not supplied here",
                   "KCC2": "Possible downstream consequence; requires genotoxicity evidence"},
+        # The stated limitations, in one place, so the README, the notebook and
+        # both Word generators quote the same sentences rather than drifting
+        # paraphrases. Nothing here is hand-typed downstream.
+        "limits": {
+            "evidence_basis":
+                "The analysis supports microbial transformation through measured "
+                "transformation products and a reconstructed-community intervention. "
+                "Function is not inferred from taxonomic composition: no abundance "
+                "table enters any estimate reported here.",
+            "data_handling":
+                "Exact S39 plasma duplicates are identical and collapse. S15 caecal "
+                "duplicates disagree and are excluded, which removes every germ-free "
+                "and GFA caecal value; no germ-free caecum/plasma ratio is therefore "
+                "computable and the earlier summaries built on one are withdrawn. "
+                "Culture wells are averaged within donor before paired donor-level "
+                "inference. Urine and bladder collection strata are analysed "
+                "separately and never pooled.",
+            "acute_timecourse":
+                "The acute table is descriptive. It cannot support source "
+                "attribution for a reason reconciliation would not remove: the "
+                "earliest samples are at 1 h with BCPN already present in both "
+                "compartments. It is additionally excluded from calibration and new "
+                "testing because treatment labels are inferred, per-cell counts "
+                "disagree with the stated protocol and published statistics disagree "
+                "with the table. S37 mixes normalisation scales and is excluded from "
+                "new quantitative inference. No kinetic rate is fitted anywhere.",
+            "unity_cutoff":
+                "No physical lumen/plasma cutoff is validated, and the data-side "
+                "reason is prior to the model-side one. Pairing by animal cancels a "
+                "per-animal scale factor but not matrix-specific extraction, recovery "
+                "or internal-standard normalisation, so cross-matrix ratios remain "
+                "provisional. Independently, two model counterexamples raise a "
+                "host-only ratio above one -- increased exchange, and biliary "
+                "delivery at a few per cent of plasma clearance -- because influx and "
+                "efflux coefficients vary independently and no reciprocity is "
+                "enforced. Within-matrix treatment contrasts are a different estimand "
+                "and do not bear on a cutoff either way.",
+            "kcc_scope":
+                "KCC1-related metabolism does not establish the conditional KCC6 home "
+                "or the KCC7, KCC8 and KCC10 links. Each requires its own functional "
+                "host-response endpoint and KCC2 requires genotoxicity evidence; none "
+                "is imported here. The model exposure index supplies none of it: it "
+                "is exactly proportional to cumulative urinary excretion, so it "
+                "carries no independent tissue or host-response information.",
+            "acquisition_counts":
+                "Deposition rows are LC-MS acquisitions, not animals. Each aliquot "
+                "appears once per ionisation mode and once before and once after "
+                "deglucuronidation, so record counts overstate biological n by 1.5 to "
+                "4 times. Any reported n must come from the biological count.",
+            "model_magnitudes":
+                "The supplementary model's magnitudes are refuted rather than merely "
+                "illustrative: they were compared against published values and are "
+                "two to three orders of magnitude high in lumen and plasma, with the "
+                "intraluminal ordering wrong. Only orderings, ratios and fractions "
+                "are readable, and the model is not a calibrated prediction.",
+            "model_mechanism_divergence":
+                "Within the model, deconjugation carries the antibiotic contrast and "
+                "adding microbial oxidation lowers total systemic exposure. That "
+                "diverges from the source study's causal account, which runs through "
+                "conversion, and limits how far the model can be read as a mechanism "
+                "for the measured effects.",
+            "sequence_level_outcome":
+                "The organism-level tumour tables (S3, S42) are sequence-level "
+                "evidence: fewer neoplasms when the microbiota is depleted. "
+                "They do not score KCC2, KCC6 or KCC10, because no adduct, "
+                "mutation, inflammatory or proliferation endpoint is measured "
+                "in any arm and a tumour count is an outcome rather than any "
+                "of those. They are also not isolate-level attribution: "
+                "antibiotics remove the converting organism together with "
+                "everything else, and the reconstructed consortium arms are "
+                "metabolomic at days to three weeks rather than tumour "
+                "studies. S3 is five separate experiments and is analysed "
+                "stratified by experiment, not pooled.",
+            "power":
+                "Families that do not survive multiplicity adjustment are not "
+                "evidence of no effect. Group sizes here are roughly five to eleven "
+                "per stratum with Holm correction across nine compartments or five "
+                "strata, and several intervals include both large and negligible "
+                "effects. Non-significance and equivalence are not interchangeable.",
+        },
     }
 
 
@@ -302,13 +534,17 @@ def acute_analysis(tables):
         "descriptive": descriptive, "published_contrasts": checks,
         "treatment_mapping": "A-prefixed ID interpreted as ABX/BBN; corroborated by 11/12 labelled source contrasts within 1 nM, not by an explicit raw group field",
         "resampling_unit": "terminal animal ID within time and inferred treatment; no longitudinal pairing",
+        # Ordered by what reconciliation could fix. The first item cannot be
+        # fixed by any amount of it, so it is stated first: the design does not
+        # resolve source order regardless of how the labels and counts settle.
         "limitations": [
+            "Design limit, not reconcilable: the earliest samples are at 1 h and BCPN is already present in both compartments, so no ordering of microbial versus host generation is identifiable from this table however the discrepancies below are resolved.",
             "Methods report five animals/time/group; the table contains five or six IDs per cell.",
             "Article text reports P=0.085 for the 1-h caecal comparison; S18 reports adjusted P=0.0108913, and its estimate differs slightly from raw mean difference.",
-            "All first samples are at 1 h; concentrations in both compartments already present do not establish which source generated BCPN first.",
+            "Treatment labels are inferred from an A-prefixed ID rather than read from an explicit group field.",
             "Reported zero values may be below detection; no assay LOD is supplied in this derived table.",
         ],
-        "use": "Descriptive temporal comparison only; excluded from kinetic calibration and new significance testing pending source reconciliation.",
+        "use": "Descriptive temporal comparison only. Excluded from source attribution by the design limit above, which reconciliation cannot remove; excluded from kinetic calibration and new significance testing by the label, count and statistic discrepancies, which it could.",
     }
 
 

@@ -15,7 +15,9 @@
     "S15": "uM source-table values; compare GF/GFA within matrix",
     "S18_BCPN": "BCPN_uM source-table values; tissue/plasma normalisation unresolved",
     "S32": "A. U. LC-MS signal, not concentration or exposure AUC",
-    "S37": "wide tissue signals have no declared absolute unit; mixed SI1 scales need reconciliation"
+    "S37": "wide tissue signals have no declared absolute unit; mixed SI1 scales need reconciliation",
+    "S3": "animal counts by terminal bladder histology in five separate experiments (I-V); `experiment` is the forward-filled group label, `Group` is the raw cell",
+    "S42": "animal counts by terminal bladder histology, EHBN agent, one experiment"
   },
   "tables": {
     "S4": [
@@ -17588,6 +17590,124 @@
         "p": 0.671559667749352,
         "p.adj": 0.774876539710791,
         "p.adj.signif": "ns"
+      }
+    ],
+    "S42": [
+      {
+        "source_row": 2,
+        "Treatment": "ABX/EHBN",
+        "Normal": 6,
+        "CIS": null,
+        "Invasion": 2
+      },
+      {
+        "source_row": 3,
+        "Treatment": "EHBN",
+        "Normal": 1,
+        "CIS": 1,
+        "Invasion": 7
+      }
+    ],
+    "S3": [
+      {
+        "source_row": 2,
+        "Group": "I",
+        "Treatment": "ABX/BBN",
+        "Normal": 5,
+        "CIS": 1,
+        "Invasion": null,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "I"
+      },
+      {
+        "source_row": 3,
+        "Group": null,
+        "Treatment": "BBN",
+        "Normal": null,
+        "CIS": null,
+        "Invasion": 5,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "I"
+      },
+      {
+        "source_row": 4,
+        "Group": "II",
+        "Treatment": "ABX/BBN",
+        "Normal": 8,
+        "CIS": null,
+        "Invasion": null,
+        "Sarcomatoid carcinoma": 1,
+        "experiment": "II"
+      },
+      {
+        "source_row": 5,
+        "Group": null,
+        "Treatment": "BBN",
+        "Normal": 3,
+        "CIS": 1,
+        "Invasion": 3,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "II"
+      },
+      {
+        "source_row": 6,
+        "Group": "III",
+        "Treatment": "ABX/BBN",
+        "Normal": 2,
+        "CIS": 1,
+        "Invasion": 2,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "III"
+      },
+      {
+        "source_row": 7,
+        "Group": null,
+        "Treatment": "BBN",
+        "Normal": null,
+        "CIS": 2,
+        "Invasion": 2,
+        "Sarcomatoid carcinoma": 1,
+        "experiment": "III"
+      },
+      {
+        "source_row": 8,
+        "Group": "IV",
+        "Treatment": "ABX/BBN",
+        "Normal": 3,
+        "CIS": null,
+        "Invasion": 1,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "IV"
+      },
+      {
+        "source_row": 9,
+        "Group": null,
+        "Treatment": "BBN",
+        "Normal": 1,
+        "CIS": 2,
+        "Invasion": 2,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "IV"
+      },
+      {
+        "source_row": 10,
+        "Group": "V",
+        "Treatment": "ABX/BBN",
+        "Normal": 8,
+        "CIS": null,
+        "Invasion": null,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "V"
+      },
+      {
+        "source_row": 11,
+        "Group": null,
+        "Treatment": "BBN",
+        "Normal": 3,
+        "CIS": 2,
+        "Invasion": 3,
+        "Sarcomatoid carcinoma": null,
+        "experiment": "V"
       }
     ],
     "S18_BCPN": [

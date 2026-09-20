@@ -8,8 +8,8 @@
     "sha256": "fe43970068026537c9f95b8132ded29d93397598cc28aab74e381147e341928c",
     "selection": "S4, S5, S15, S16, S18, S23, S32, S37–S40"
   },
-  "input_sha256": "806e61f6105a877954859838f090bdbea928e1cb481fcbb17e8388bf609e050b",
-  "input_content_sha256": "95bbe8cf92cc158b1c7aeb4df89f3b411fbe5e7c0d36a1591cb5ec3799066bf5",
+  "input_sha256": "a228e264c9c833c8bf5e12da93b6f1def999c96d6844135dc69106765460a76f",
+  "input_content_sha256": "70b5cee5ff78d81237672602a723b0cb736a491ba5ffebec1bb40f28eb221870",
   "seed": 20260920,
   "n_bootstrap": 20000,
   "methods": {
@@ -18,7 +18,7 @@
     "tests": "two-sided independent-label permutation or paired donor sign-flip; Holm within stated families",
     "zeros": "reported zeros retained; no invented LOD or pseudocount",
     "strata": "collection week and analytical batch kept separate; no pooled longitudinal test",
-    "interpretation": "No cross-compartment unity cutoff, kinetic calibration, external validation or functional KCC response is inferred."
+    "interpretation": "No cross-compartment unity cutoff, kinetic calibration, external validation or functional KCC response is inferred. Cross-matrix ratios are provisional because matrix-specific normalisation is unresolved, which is prior to any model argument about a cutoff."
   },
   "consortium": [
     {
@@ -4398,12 +4398,13 @@
     "treatment_mapping": "A-prefixed ID interpreted as ABX/BBN; corroborated by 11/12 labelled source contrasts within 1 nM, not by an explicit raw group field",
     "resampling_unit": "terminal animal ID within time and inferred treatment; no longitudinal pairing",
     "limitations": [
+      "Design limit, not reconcilable: the earliest samples are at 1 h and BCPN is already present in both compartments, so no ordering of microbial versus host generation is identifiable from this table however the discrepancies below are resolved.",
       "Methods report five animals/time/group; the table contains five or six IDs per cell.",
       "Article text reports P=0.085 for the 1-h caecal comparison; S18 reports adjusted P=0.0108913, and its estimate differs slightly from raw mean difference.",
-      "All first samples are at 1 h; concentrations in both compartments already present do not establish which source generated BCPN first.",
+      "Treatment labels are inferred from an A-prefixed ID rather than read from an explicit group field.",
       "Reported zero values may be below detection; no assay LOD is supplied in this derived table."
     ],
-    "use": "Descriptive temporal comparison only; excluded from kinetic calibration and new significance testing pending source reconciliation."
+    "use": "Descriptive temporal comparison only. Excluded from source attribution by the design limit above, which reconciliation cannot remove; excluded from kinetic calibration and new significance testing by the label, count and statistic discrepancies, which it could."
   },
   "isolate_signals": [
     {
@@ -6188,6 +6189,162 @@
       "p.adj.signif": "ns"
     }
   ],
+  "tumour_outcome": {
+    "evidence_class": "sequence-level outcome under a microbial handle",
+    "scores_kcc": null,
+    "results": [
+      {
+        "agent": "BBN",
+        "source_table": "S3",
+        "n_experiments": 5,
+        "per_experiment": [
+          {
+            "experiment": "I",
+            "source_rows": [
+              2,
+              3
+            ],
+            "treated_arm": "ABX/BBN",
+            "treated_normal": 5,
+            "treated_neoplasia": 1,
+            "control_arm": "BBN",
+            "control_normal": 0,
+            "control_neoplasia": 5,
+            "treated_n": 6,
+            "treated_neoplasia_fraction": 0.16666666666666666,
+            "control_n": 5,
+            "control_neoplasia_fraction": 1.0
+          },
+          {
+            "experiment": "II",
+            "source_rows": [
+              4,
+              5
+            ],
+            "treated_arm": "ABX/BBN",
+            "treated_normal": 8,
+            "treated_neoplasia": 1,
+            "control_arm": "BBN",
+            "control_normal": 3,
+            "control_neoplasia": 4,
+            "treated_n": 9,
+            "treated_neoplasia_fraction": 0.1111111111111111,
+            "control_n": 7,
+            "control_neoplasia_fraction": 0.5714285714285714
+          },
+          {
+            "experiment": "III",
+            "source_rows": [
+              6,
+              7
+            ],
+            "treated_arm": "ABX/BBN",
+            "treated_normal": 2,
+            "treated_neoplasia": 3,
+            "control_arm": "BBN",
+            "control_normal": 0,
+            "control_neoplasia": 5,
+            "treated_n": 5,
+            "treated_neoplasia_fraction": 0.6,
+            "control_n": 5,
+            "control_neoplasia_fraction": 1.0
+          },
+          {
+            "experiment": "IV",
+            "source_rows": [
+              8,
+              9
+            ],
+            "treated_arm": "ABX/BBN",
+            "treated_normal": 3,
+            "treated_neoplasia": 1,
+            "control_arm": "BBN",
+            "control_normal": 1,
+            "control_neoplasia": 4,
+            "treated_n": 4,
+            "treated_neoplasia_fraction": 0.25,
+            "control_n": 5,
+            "control_neoplasia_fraction": 0.8
+          },
+          {
+            "experiment": "V",
+            "source_rows": [
+              10,
+              11
+            ],
+            "treated_arm": "ABX/BBN",
+            "treated_normal": 8,
+            "treated_neoplasia": 0,
+            "control_arm": "BBN",
+            "control_normal": 3,
+            "control_neoplasia": 5,
+            "treated_n": 8,
+            "treated_neoplasia_fraction": 0.0,
+            "control_n": 8,
+            "control_neoplasia_fraction": 0.625
+          }
+        ],
+        "pooled_treated": {
+          "arm": "ABX/BBN",
+          "normal": 26,
+          "neoplasia": 6,
+          "n": 32,
+          "neoplasia_fraction": 0.1875
+        },
+        "pooled_control": {
+          "arm": "BBN",
+          "normal": 7,
+          "neoplasia": 23,
+          "n": 30,
+          "neoplasia_fraction": 0.7666666666666667
+        },
+        "primary_test": "Cochran-Mantel-Haenszel, stratified by experiment",
+        "cmh_chi2": 21.401655565238187,
+        "p_value": 3.7244944329167503e-06,
+        "experiments_favouring_control": 5,
+        "pooled_yates_p_for_reconciliation": 1.6116919311148033e-05,
+        "pooled_note": "The source article reports a pooled chi-square of P = 1.6e-5, reproduced here by the Yates-corrected pooled test. It is given only to reconcile with the printed value; the stratified statistic is primary.",
+        "p_holm": 7.448988865833501e-06,
+        "multiplicity_family": "Organism-level outcome: two agents",
+        "family_size": 2
+      },
+      {
+        "agent": "EHBN",
+        "source_table": "S42",
+        "n_experiments": 1,
+        "treated": {
+          "arm": "ABX/EHBN",
+          "normal": 6,
+          "neoplasia": 2,
+          "n": 8,
+          "neoplasia_fraction": 0.25
+        },
+        "control": {
+          "arm": "EHBN",
+          "normal": 1,
+          "neoplasia": 8,
+          "n": 9,
+          "neoplasia_fraction": 0.8888888888888888
+        },
+        "primary_test": "Fisher exact, two-sided",
+        "p_value": 0.015220074043603454,
+        "source_rows": [
+          2,
+          3
+        ],
+        "note": "A single experiment in a second agent. It corroborates the direction of the S3 result; it is not an independent confirmation of the BBN finding and its n is small.",
+        "p_holm": 0.015220074043603454,
+        "multiplicity_family": "Organism-level outcome: two agents",
+        "family_size": 2
+      }
+    ],
+    "does_not_establish": [
+      "KCC2: no adduct or mutation measurement in any arm.",
+      "KCC6: no inflammatory endpoint in any arm.",
+      "KCC10: a tumour count is an outcome, not a measurement of altered proliferation, cell death or nutrient supply.",
+      "Isolate-level attribution: antibiotics remove the converting organism together with everything else, and the reconstructed consortium arms are metabolomic rather than tumour studies."
+    ]
+  },
   "audits": {
     "S39": {
       "exact_duplicate_rows_collapsed": 16,
@@ -6407,5 +6564,17 @@
     "KCC1": "Metabolic activation-related evidence; not a new assay of electrophilicity",
     "KCC6_KCC7_KCC8_KCC10": "Require corresponding functional host-response endpoints, not supplied here",
     "KCC2": "Possible downstream consequence; requires genotoxicity evidence"
+  },
+  "limits": {
+    "evidence_basis": "The analysis supports microbial transformation through measured transformation products and a reconstructed-community intervention. Function is not inferred from taxonomic composition: no abundance table enters any estimate reported here.",
+    "data_handling": "Exact S39 plasma duplicates are identical and collapse. S15 caecal duplicates disagree and are excluded, which removes every germ-free and GFA caecal value; no germ-free caecum/plasma ratio is therefore computable and the earlier summaries built on one are withdrawn. Culture wells are averaged within donor before paired donor-level inference. Urine and bladder collection strata are analysed separately and never pooled.",
+    "acute_timecourse": "The acute table is descriptive. It cannot support source attribution for a reason reconciliation would not remove: the earliest samples are at 1 h with BCPN already present in both compartments. It is additionally excluded from calibration and new testing because treatment labels are inferred, per-cell counts disagree with the stated protocol and published statistics disagree with the table. S37 mixes normalisation scales and is excluded from new quantitative inference. No kinetic rate is fitted anywhere.",
+    "unity_cutoff": "No physical lumen/plasma cutoff is validated, and the data-side reason is prior to the model-side one. Pairing by animal cancels a per-animal scale factor but not matrix-specific extraction, recovery or internal-standard normalisation, so cross-matrix ratios remain provisional. Independently, two model counterexamples raise a host-only ratio above one -- increased exchange, and biliary delivery at a few per cent of plasma clearance -- because influx and efflux coefficients vary independently and no reciprocity is enforced. Within-matrix treatment contrasts are a different estimand and do not bear on a cutoff either way.",
+    "kcc_scope": "KCC1-related metabolism does not establish the conditional KCC6 home or the KCC7, KCC8 and KCC10 links. Each requires its own functional host-response endpoint and KCC2 requires genotoxicity evidence; none is imported here. The model exposure index supplies none of it: it is exactly proportional to cumulative urinary excretion, so it carries no independent tissue or host-response information.",
+    "acquisition_counts": "Deposition rows are LC-MS acquisitions, not animals. Each aliquot appears once per ionisation mode and once before and once after deglucuronidation, so record counts overstate biological n by 1.5 to 4 times. Any reported n must come from the biological count.",
+    "model_magnitudes": "The supplementary model's magnitudes are refuted rather than merely illustrative: they were compared against published values and are two to three orders of magnitude high in lumen and plasma, with the intraluminal ordering wrong. Only orderings, ratios and fractions are readable, and the model is not a calibrated prediction.",
+    "model_mechanism_divergence": "Within the model, deconjugation carries the antibiotic contrast and adding microbial oxidation lowers total systemic exposure. That diverges from the source study's causal account, which runs through conversion, and limits how far the model can be read as a mechanism for the measured effects.",
+    "sequence_level_outcome": "The organism-level tumour tables (S3, S42) are sequence-level evidence: fewer neoplasms when the microbiota is depleted. They do not score KCC2, KCC6 or KCC10, because no adduct, mutation, inflammatory or proliferation endpoint is measured in any arm and a tumour count is an outcome rather than any of those. They are also not isolate-level attribution: antibiotics remove the converting organism together with everything else, and the reconstructed consortium arms are metabolomic at days to three weeks rather than tumour studies. S3 is five separate experiments and is analysed stratified by experiment, not pooled.",
+    "power": "Families that do not survive multiplicity adjustment are not evidence of no effect. Group sizes here are roughly five to eleven per stratum with Holm correction across nine compartments or five strata, and several intervals include both large and negligible effects. Non-significance and equivalence are not interchangeable."
   }
 }

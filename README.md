@@ -59,3 +59,5 @@ The deposit excludes publication images, notebook outputs, Word files/generators
 - KCC1-related metabolism does not establish the conditional KCC6 home or KCC7/8/10 links. These require their corresponding functional host-response evidence; KCC2 requires genotoxicity evidence. The exposure index supplies none.
 
 Software: MIT. New derived results: CC BY 4.0. Third-party source rows retain attribution and original terms. See `LICENSE`, `LICENSE-DATA` and `data/THIRD_PARTY.md`.
+
+`code/emd2_simulation/fit/EVIDENCE_MAP.md` records why the EMD2 domain is assumed and which published exemplar carries each typed EMD2–KCC edge, with full citations. Identifiers it completed rather than inherited are tagged; verify those before reuse.

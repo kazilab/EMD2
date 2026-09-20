@@ -1,4 +1,6 @@
 """Checks of published-data units, eligibility and statistical independence."""
+import tempfile
+from pathlib import Path
 import json
 import numpy as np
 import pytest
@@ -108,3 +110,106 @@ def test_provenance_cannot_claim_bundled_hash_for_modified_data():
 def test_nonfinite_observations_are_rejected(a, b):
     with pytest.raises(ValueError, match="Finite"):
         contrast(a, b, key="invalid")
+
+
+def test_stated_limits_are_single_sourced_and_cover_each_area():
+    """The limits paragraph is emitted, not hand-typed downstream.
+
+    Both Word generators and the README quote these strings, so a missing or
+    renamed key would let the documents drift into paraphrase.
+    """
+    limits = analyse(n_bootstrap=100)["limits"]
+    assert set(limits) == {
+        "evidence_basis", "data_handling", "acute_timecourse", "unity_cutoff",
+        "kcc_scope", "acquisition_counts", "model_magnitudes",
+        "model_mechanism_divergence", "power", "sequence_level_outcome"}
+    assert all(isinstance(v, str) and len(v) > 80 for v in limits.values())
+    # The load-bearing qualifications, asserted so they cannot be softened away.
+    assert "not inferred from taxonomic" in limits["evidence_basis"]
+    assert "withdrawn" in limits["data_handling"]
+    assert "reconciliation would not remove" in limits["acute_timecourse"]
+    assert "prior to the model-side" in limits["unity_cutoff"]
+    assert "genotoxicity" in limits["kcc_scope"]
+    assert "not animals" in limits["acquisition_counts"]
+    assert "refuted" in limits["model_magnitudes"]
+    assert "not evidence of no effect" in limits["power"]
+
+
+def test_acute_limitations_lead_with_the_irreducible_design_limit():
+    """Reconciling labels, counts and statistics would not make the acute table
+    support source attribution; being sampled first at 1 h would still. The
+    unfixable reason is stated first so it is not read as a pending to-do."""
+    acute = analyse(n_bootstrap=100)["acute"]
+    assert acute["limitations"][0].startswith("Design limit, not reconcilable")
+    assert "1 h" in acute["limitations"][0]
+    assert "reconciliation cannot remove" in acute["use"]
+
+
+def test_canvas_guard_ignores_ticks_outside_the_view():
+    """The guard checks rendered text. A locator also emits Text objects for
+    ticks beyond the axis limits, which matplotlib never draws; counting those
+    made the guard reject a correct figure over a log-axis decade tick the
+    panel does not show. Regression: a view-excluded tick must not trip it.
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from emd2_simulation.empirical_figure import _save
+
+    fig, ax = plt.subplots(figsize=(4, 3), dpi=100)
+    # Generous margins so the only candidate for overflow is the out-of-view
+    # tick this test is about, not an edge label on a cramped canvas.
+    fig.subplots_adjust(left=0.25, right=0.75, top=0.75, bottom=0.25)
+    ax.set_xscale("log")
+    ax.plot([0.1, 5.0], [1, 2])
+    ax.set_xlim(0.05, 10.0)          # locator still makes a label at 100
+    assert any(t.get_text() and t.get_position()[0] > 10.0
+               for t in ax.xaxis.get_ticklabels()), "no out-of-view tick to test"
+    with tempfile.TemporaryDirectory() as tmp:
+        _save(fig, Path(tmp), "guard_probe")      # must not raise
+
+
+def test_tumour_outcome_is_stratified_by_experiment_not_pooled():
+    """S3 is five separate experiments. Every other family in this module keeps
+    its strata apart, and pooling them into one 2x2 -- which is what the source
+    article reports -- would treat experiment as ignorable. The stratified
+    statistic is primary; the pooled one is kept only to reconcile with the
+    printed value."""
+    t = analyse(n_bootstrap=200)["tumour_outcome"]
+    s3 = next(r for r in t["results"] if r["source_table"] == "S3")
+    assert s3["n_experiments"] == 5
+    assert s3["primary_test"].startswith("Cochran-Mantel-Haenszel")
+    assert s3["p_value"] < s3["pooled_yates_p_for_reconciliation"]
+    # the article's printed value, reproduced by the pooled Yates test only
+    assert s3["pooled_yates_p_for_reconciliation"] == pytest.approx(1.6e-5, rel=0.05)
+    # direction consistent in every experiment
+    assert s3["experiments_favouring_control"] == 5
+    for s in s3["per_experiment"]:
+        assert s["treated_n"] == s["treated_normal"] + s["treated_neoplasia"]
+        assert s["control_n"] == s["control_normal"] + s["control_neoplasia"]
+
+
+def test_tumour_outcome_counts_match_the_published_table():
+    t = analyse(n_bootstrap=200)["tumour_outcome"]
+    s3 = next(r for r in t["results"] if r["source_table"] == "S3")
+    assert (s3["pooled_treated"]["normal"], s3["pooled_treated"]["neoplasia"]) == (26, 6)
+    assert (s3["pooled_control"]["normal"], s3["pooled_control"]["neoplasia"]) == (7, 23)
+    assert s3["pooled_treated"]["n"] == 32 and s3["pooled_control"]["n"] == 30
+    s42 = next(r for r in t["results"] if r["source_table"] == "S42")
+    assert s42["treated"]["n"] == 8 and s42["control"]["n"] == 9
+    assert s42["p_value"] == pytest.approx(0.0152, abs=5e-4)
+    assert s42["n_experiments"] == 1
+
+
+def test_tumour_outcome_scores_no_kcc_and_says_which():
+    """Sequence-level evidence must not be read as KCC2, KCC6 or KCC10, and the
+    antibiotic handle is confounded. Asserted so the disclaimer cannot be
+    dropped while the result is kept."""
+    t = analyse(n_bootstrap=200)["tumour_outcome"]
+    assert t["scores_kcc"] is None
+    joined = " ".join(t["does_not_establish"])
+    for token in ("KCC2", "KCC6", "KCC10", "Isolate-level"):
+        assert token in joined
+    assert "everything else" in joined          # the confounding statement
+    limits = analyse(n_bootstrap=200)["limits"]
+    assert "stratified by experiment, not pooled" in limits["sequence_level_outcome"]

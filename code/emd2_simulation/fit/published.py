@@ -17,7 +17,7 @@ WORKBOOK = DATA / "41586_2024_7754_MOESM4_ESM.xlsx"
 OUTPUT = DATA / "published_roje2024.json"
 SOURCE_SHA256 = "fe43970068026537c9f95b8132ded29d93397598cc28aab74e381147e341928c"
 SOURCE_URL = "https://doi.org/10.1038/s41586-024-07754-w"
-SHEETS = ("S4", "S5", "S15", "S16", "S23", "S32", "S37", "S38", "S39", "S40")
+SHEETS = ("S4", "S5", "S15", "S16", "S23", "S32", "S37", "S38", "S39", "S40", "S42")
 
 
 def build(path: Path = WORKBOOK) -> dict:
@@ -40,6 +40,25 @@ def build(path: Path = WORKBOOK) -> dict:
             {"source_row": n, **{k: v for k, v in zip(header, row) if k is not None}}
             for n, row in enumerate(iterator, 2) if any(v is not None for v in row)
         ]
+    # S3 gives the organism-level outcome as FIVE separate experiments, with the
+    # group label written once per ABX/BBN + BBN pair and left blank on the
+    # second row. The blank is layout, not a missing value, so it is forward
+    # filled into an explicit `experiment` key while `Group` keeps exactly what
+    # the cell contained. Pooling the five is what the article reports; this
+    # build analyses them stratified, so the structure has to survive import.
+    rows = list(wb["S3"].iter_rows(values_only=True))
+    header = [str(v).strip() if v is not None else None for v in rows[0]]
+    experiment = None
+    tables["S3"] = []
+    for n, row in enumerate(rows[1:], 2):
+        if not any(v is not None for v in row):
+            continue
+        record = {"source_row": n, **{k: v for k, v in zip(header, row) if k is not None}}
+        if record.get("Group") is not None:
+            experiment = str(record["Group"]).strip()
+        record["experiment"] = experiment
+        tables["S3"].append(record)
+
     # S18 has a spurious million-row used range. The checksum-reviewed data
     # occupy three side-by-side blocks within the first 135 rows.
     rows = list(wb["S18"].iter_rows(max_row=135, values_only=True))
@@ -66,6 +85,8 @@ def build(path: Path = WORKBOOK) -> dict:
             "S18_BCPN": "BCPN_uM source-table values; tissue/plasma normalisation unresolved",
             "S32": "A. U. LC-MS signal, not concentration or exposure AUC",
             "S37": "wide tissue signals have no declared absolute unit; mixed SI1 scales need reconciliation",
+            "S3": "animal counts by terminal bladder histology in five separate experiments (I-V); `experiment` is the forward-filled group label, `Group` is the raw cell",
+            "S42": "animal counts by terminal bladder histology, EHBN agent, one experiment",
         },
         "tables": tables,
     }

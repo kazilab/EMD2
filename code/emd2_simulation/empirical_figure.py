@@ -72,7 +72,20 @@ def _save(fig, outdir, stem):
     texts = list(fig.texts)
     for ax in fig.axes:
         texts += [ax.title, ax._left_title, ax._right_title, ax.xaxis.label, ax.yaxis.label]
-        texts += ax.get_xticklabels() + ax.get_yticklabels() + list(ax.texts)
+        texts += list(ax.texts)
+        # Tick labels only for ticks INSIDE the view. A locator emits Text
+        # objects for ticks beyond the axis limits as well; matplotlib never
+        # draws those, but their window extents are projected outside the
+        # canvas, so including them made this guard fire on a figure that
+        # renders correctly -- on a log axis it reported a decade tick the
+        # panel does not show.
+        for axis, (lo, hi) in ((ax.xaxis, sorted(ax.get_xlim())),
+                               (ax.yaxis, sorted(ax.get_ylim()))):
+            index = 0 if axis is ax.xaxis else 1
+            for label in axis.get_ticklabels():
+                position = label.get_position()[index]
+                if lo - 1e-9 <= position <= hi + 1e-9:
+                    texts.append(label)
     for text in texts:
         if not text.get_visible() or not text.get_text():
             continue
