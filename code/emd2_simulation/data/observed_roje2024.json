@@ -1,0 +1,139 @@
+{
+  "source": "Roje B et al. Gut microbiota carcinogen metabolism causes distal tissue tumours. Nature 632:1137-1144 (2024), Supplementary Tables 1-51 (41586_2024_7754_MOESM4_ESM.xlsx), DOI 10.1038/s41586-024-07754-w",
+  "tables_used": [
+    "S5",
+    "S6",
+    "S7",
+    "S13",
+    "S15",
+    "S39"
+  ],
+  "segment_mapping": {
+    "SI1": "duodenum",
+    "SI2": "jejunum",
+    "SI3": "ileum",
+    "CEC": "cecum",
+    "COL": "colon",
+    "REC": "rectum"
+  },
+  "comparability": "Ratios are provisional source-table summaries. Same-animal pairing or batch matching does not cancel matrix-specific extraction, dilution, recovery or internal-standard factors. Original-compartment concentration normalisation has not been demonstrated here, so comparisons against a physical threshold of one are not validated. Conventional/antibiotic summaries are ratios of batch-matched cohort medians, not same-animal ratios. Cross-sheet animal-ID linkage has not been established by the importer. Reported zeros may be below detection, not biological absence. Absolute concentrations are not directly comparable across sheets; intraluminal profiles are used as shape rather than calibrated magnitude.",
+  "profile_uM_3wk": {
+    "BBN": {
+      "cecum": 6.690822940488159,
+      "colon": 4.80291742154828,
+      "duodenum": 0.41036996230447953,
+      "ileum": 0.42956634111977554,
+      "jejunum": 0.2963527094319105,
+      "rectum": 2.5141391501938553
+    },
+    "ABX/BBN": {
+      "cecum": 0.0,
+      "colon": 0.0,
+      "duodenum": 0.15939428822759,
+      "ileum": 0.1063194772258638,
+      "jejunum": 0.0750613816935139,
+      "rectum": 0.0
+    }
+  },
+  "profile_uM_7wk": {
+    "ABX/BBN": {
+      "cecum": 0.749184142985241,
+      "colon": 0.256183300222224,
+      "duodenum": 0.19151371463613548,
+      "ileum": 0.02119832059822385,
+      "jejunum": 0.0,
+      "rectum": 0.0
+    },
+    "BBN": {
+      "cecum": 9.96795988312784,
+      "colon": 7.67290824830429,
+      "duodenum": 0.0989278367460801,
+      "ileum": 0.0,
+      "jejunum": 0.0587498892799639,
+      "rectum": 5.65638214102184
+    }
+  },
+  "ratio_per_animal": {
+    "2Mem": [
+      0.0327,
+      0.0882,
+      0.2396,
+      0.7934,
+      0.913,
+      2.0572,
+      2.3123,
+      3.3865
+    ],
+    "3Mem": [
+      0.2448,
+      0.6768,
+      1.2528,
+      1.49,
+      2.3985,
+      4.2301,
+      4.239,
+      4.4154
+    ]
+  },
+  "ratio_batch_matched": {
+    "BBN": {
+      "3wk_1213": {
+        "cecum_uM": 21.9127,
+        "plasma_uM": 3.20957,
+        "ratio": 6.8273
+      },
+      "3wk_Nov": {
+        "cecum_uM": 4.0254,
+        "plasma_uM": 0.43892,
+        "ratio": 9.1711
+      }
+    },
+    "ABX/BBN": {
+      "3wk_1213": {
+        "cecum_uM": 0.0,
+        "plasma_uM": 11.96029,
+        "ratio": 0.0
+      },
+      "3wk_Nov": {
+        "cecum_uM": 0.0085,
+        "plasma_uM": 0.16498,
+        "ratio": 0.0513
+      }
+    }
+  },
+  "systemic_3wk": {
+    "plasma": {
+      "conventional": 590.23566,
+      "antibiotic": 231.18795,
+      "ratio": 2.553055468505171,
+      "unit": "nM"
+    },
+    "kidney": {
+      "conventional": 3043.36704976744,
+      "antibiotic": 1082.28143561128,
+      "ratio": 2.811992287429864,
+      "unit": "nmole/kg"
+    },
+    "liver": {
+      "conventional": 2696.18906774259,
+      "antibiotic": 718.317141727337,
+      "ratio": 3.7534800593217987,
+      "unit": "nmole/kg"
+    }
+  },
+  "urine_3wk": {
+    "conventional": {
+      "nM": 277374.155179066,
+      "nmole_24h": 146.558985516234,
+      "n": 9
+    },
+    "antibiotic": {
+      "nM": 286983.1294380645,
+      "nmole_24h": 91.47635909712726,
+      "n": 10
+    }
+  },
+  "tests": {
+    "2Mem_vs_3Mem": 0.1304
+  }
+}

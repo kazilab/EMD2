@@ -1,0 +1,2046 @@
+{
+  "empirical": {
+    "file": "emd2_empirical_summary.json",
+    "input_sha256": "806e61f6105a877954859838f090bdbea928e1cb481fcbb17e8388bf609e050b",
+    "analysis_kind": "exploratory secondary analysis of published experiments",
+    "kinetic_calibration": {
+      "performed": false,
+      "reason": "The acute table has unresolved protocol/count and published-statistic discrepancies; relative signals lack physical scale, and the existing mechanism requires structural revision. Experimental contrasts are estimated without fitting physiological rates."
+    }
+  },
+  "arms": {
+    "B": {
+      "c_BBN_duodenum": 1708.1821245960773,
+      "c_gBBN_duodenum": 1340.4738428226203,
+      "c_BCPNm_duodenum": 1.135569845933215,
+      "c_BCPNh_duodenum": 0.02131232095147943,
+      "c_BCPN_duodenum": 1.1568821668846945,
+      "c_BBN_jejunum": 1004.311569615821,
+      "c_gBBN_jejunum": 1110.247689427603,
+      "c_BCPNm_jejunum": 8.406598116000108,
+      "c_BCPNh_jejunum": 0.06982817352395293,
+      "c_BCPN_jejunum": 8.476426289524062,
+      "c_BBN_ileum": 994.8390952028478,
+      "c_gBBN_ileum": 1533.3548127347976,
+      "c_BCPNm_ileum": 93.71436938086903,
+      "c_BCPNh_ileum": 0.17940766712421535,
+      "c_BCPN_ileum": 93.89377704799324,
+      "c_BBN_cecum": 911.5881091758711,
+      "c_gBBN_cecum": 417.91313560067147,
+      "c_BCPNm_cecum": 9073.42299388983,
+      "c_BCPNh_cecum": 1.3824955293774335,
+      "c_BCPN_cecum": 9074.805489419206,
+      "c_BBN_colon": 268.9909736097044,
+      "c_gBBN_colon": 44.44048474081109,
+      "c_BCPNm_colon": 11326.922027580738,
+      "c_BCPNh_colon": 2.0122254709674134,
+      "c_BCPN_colon": 11328.934253051706,
+      "c_BBN_rectum": 166.29116100037237,
+      "c_gBBN_rectum": 15.326825806519846,
+      "c_BCPNm_rectum": 9486.309430479534,
+      "c_BCPNh_rectum": 1.8031933206880135,
+      "c_BCPN_rectum": 9488.112623800222,
+      "c_BBN_plasma": 237.487890766865,
+      "c_BCPNh_plasma": 17.22035532879538,
+      "c_BCPNm_plasma": 46.79308748483543,
+      "c_BCPN_plasma": 64.01344281363082,
+      "c_BCPNh_kidney": 10.455215735340055,
+      "c_BCPNm_kidney": 28.41008883007508,
+      "c_BCPN_kidney": 38.86530456541513,
+      "c_gBBN_bile": 6705.540445182071,
+      "c_BCPN_urine": 1554.6121826130368,
+      "U_total": 57154.53416827372,
+      "AUC_uro": 43546.311747256164,
+      "AUC_uro_host": 11870.153615517207,
+      "AUC_uro_micro": 31676.158131738957,
+      "micro_fraction": 0.7274131117139871,
+      "ratio_cecum": 141.76405908739605
+    },
+    "BA": {
+      "c_BBN_duodenum": 1708.5612444116216,
+      "c_gBBN_duodenum": 1979.8533156770698,
+      "c_BCPNm_duodenum": 0.05989921703914963,
+      "c_BCPNh_duodenum": 0.031463665337417276,
+      "c_BCPN_duodenum": 0.09136288237656691,
+      "c_BBN_jejunum": 1005.0986159216359,
+      "c_gBBN_jejunum": 1649.4126620247443,
+      "c_BCPNm_jejunum": 0.43075140008760365,
+      "c_BCPNh_jejunum": 0.10308826935755579,
+      "c_BCPN_jejunum": 0.5338396694451595,
+      "c_BBN_ileum": 968.203042702961,
+      "c_gBBN_ileum": 2464.8323264184332,
+      "c_BCPNm_ileum": 4.629960236026646,
+      "c_BCPNh_ileum": 0.264861945830046,
+      "c_BCPN_ileum": 4.894822181856692,
+      "c_BBN_cecum": 2634.7930200977707,
+      "c_gBBN_cecum": 8944.710229498207,
+      "c_BCPNm_cecum": 889.2503351485675,
+      "c_BCPNh_cecum": 2.0409966969814235,
+      "c_BCPN_cecum": 891.2913318455489,
+      "c_BBN_colon": 2517.814138401915,
+      "c_gBBN_colon": 8995.686384763441,
+      "c_BCPNm_colon": 1291.2290273218375,
+      "c_BCPNh_colon": 2.9706754579563226,
+      "c_BCPN_colon": 1294.1997027797938,
+      "c_BBN_rectum": 2006.505118344619,
+      "c_gBBN_rectum": 7342.217454971434,
+      "c_BCPNm_rectum": 1096.442908000016,
+      "c_BCPNh_rectum": 2.6620784902170023,
+      "c_BCPN_rectum": 1099.104986490233,
+      "c_BBN_plasma": 350.60655917244253,
+      "c_BCPNh_plasma": 25.422641592632953,
+      "c_BCPNm_plasma": 4.855043414804901,
+      "c_BCPN_plasma": 30.277685007437853,
+      "c_BCPNh_kidney": 15.435175252670073,
+      "c_BCPNm_kidney": 2.947704930417291,
+      "c_BCPN_kidney": 18.382880183087362,
+      "c_gBBN_bile": 9899.479317811094,
+      "c_BCPN_urine": 735.3152073235781,
+      "U_total": 27171.775774948106,
+      "AUC_uro": 20702.30535234141,
+      "AUC_uro_host": 17420.381922269386,
+      "AUC_uro_micro": 3281.9234300720227,
+      "micro_fraction": 0.1585293702423745,
+      "ratio_cecum": 29.437235099929175
+    },
+    "Germ-Free": {
+      "c_BBN_duodenum": 1708.5714285714284,
+      "c_gBBN_duodenum": 1651.976281649915,
+      "c_BCPNm_duodenum": 0.0,
+      "c_BCPNh_duodenum": 0.026252506421053045,
+      "c_BCPN_duodenum": 0.026252506421053045,
+      "c_BBN_jejunum": 1005.0420168067227,
+      "c_gBBN_jejunum": 1376.6469013749302,
+      "c_BCPNm_jejunum": 0.0,
+      "c_BCPNh_jejunum": 0.08601430965597055,
+      "c_BCPN_jejunum": 0.08601430965597055,
+      "c_BBN_ileum": 964.8403361344531,
+      "c_gBBN_ileum": 2064.9703520623952,
+      "c_BCPNm_ileum": 0.0,
+      "c_BCPNh_ileum": 0.22099427574722538,
+      "c_BCPN_ileum": 0.22099427574722538,
+      "c_BBN_cecum": 1852.4934453781514,
+      "c_gBBN_cecum": 9911.857689811379,
+      "c_BCPNm_cecum": 0.0,
+      "c_BCPNh_cecum": 1.702957310220937,
+      "c_BCPN_cecum": 1.702957310220937,
+      "c_BBN_colon": 1234.9956302521011,
+      "c_gBBN_colon": 11799.83058284579,
+      "c_BCPNm_colon": 0.0,
+      "c_BCPNh_colon": 2.478658341229687,
+      "c_BCPN_colon": 2.478658341229687,
+      "c_BBN_rectum": 902.0837647058818,
+      "c_gBBN_rectum": 9911.857689513121,
+      "c_BCPNm_rectum": 0.0,
+      "c_BCPNh_rectum": 2.2211726417650737,
+      "c_BCPN_rectum": 2.2211726417650737,
+      "c_BBN_plasma": 292.5374665421727,
+      "c_BCPNh_plasma": 21.212025188210852,
+      "c_BCPNm_plasma": 0.0,
+      "c_BCPN_plasma": 21.212025188210852,
+      "c_BCPNh_kidney": 12.878729578556579,
+      "c_BCPNm_kidney": 0.0,
+      "c_BCPN_kidney": 12.878729578556579,
+      "c_gBBN_bile": 8259.881408249576,
+      "c_BCPN_urine": 515.1491831422633,
+      "U_total": 19181.991280922928,
+      "AUC_uro": 14614.850499750806,
+      "AUC_uro_host": 14614.850499750806,
+      "AUC_uro_micro": 0.0,
+      "micro_fraction": 0.0,
+      "ratio_cecum": 0.08028263662290015
+    },
+    "Monocolonized": {
+      "c_BBN_duodenum": 1708.328946714389,
+      "c_gBBN_duodenum": 1477.683464315159,
+      "c_BCPNm_duodenum": 0.80927356469455,
+      "c_BCPNh_duodenum": 0.023490331752076283,
+      "c_BCPN_duodenum": 0.8327638964466263,
+      "c_BBN_jejunum": 1004.8293889543673,
+      "c_gBBN_jejunum": 1226.2330487178187,
+      "c_BCPNm_jejunum": 5.933599059655154,
+      "c_BCPNh_jejunum": 0.07696425769176211,
+      "c_BCPN_jejunum": 6.010563317346916,
+      "c_BBN_ileum": 992.0570340811562,
+      "c_gBBN_ileum": 1737.794589395364,
+      "c_BCPNm_ileum": 65.60404098357024,
+      "c_BCPNh_ileum": 0.19774221818489185,
+      "c_BCPN_ileum": 65.80178320175513,
+      "c_BBN_cecum": 1384.330522824872,
+      "c_gBBN_cecum": 691.0902060714285,
+      "c_BCPNm_cecum": 8502.691096872877,
+      "c_BCPNh_cecum": 1.523779540709146,
+      "c_BCPN_cecum": 8504.214876413585,
+      "c_BBN_colon": 547.990122287083,
+      "c_gBBN_colon": 102.12744172613951,
+      "c_BCPNm_colon": 10995.153663998204,
+      "c_BCPNh_colon": 2.2178646793492027,
+      "c_BCPN_colon": 10997.371528677553,
+      "c_BBN_rectum": 366.0664046595638,
+      "c_gBBN_rectum": 42.90588741324019,
+      "c_BCPNm_rectum": 9235.359863837393,
+      "c_BCPNh_rectum": 1.9874705065100835,
+      "c_BCPN_rectum": 9237.347334343904,
+      "c_BBN_plasma": 261.75794527096105,
+      "c_BCPNh_plasma": 18.98018805567764,
+      "c_BCPNm_plasma": 44.33651545075063,
+      "c_BCPN_plasma": 63.31670350642827,
+      "c_BCPNh_kidney": 11.52368560523285,
+      "c_BCPNm_kidney": 26.918598666525632,
+      "c_BCPN_kidney": 38.44228427175848,
+      "c_gBBN_bile": 7390.81257235654,
+      "c_BCPN_urine": 1537.6913708688062,
+      "U_total": 56475.59739944276,
+      "AUC_uro": 43029.02659005162,
+      "AUC_uro_host": 13064.033789577037,
+      "AUC_uro_micro": 29964.99280047458,
+      "micro_fraction": 0.6963902085436099,
+      "ratio_cecum": 134.3123442228825
+    },
+    "2Mem": {
+      "c_BBN_duodenum": 1709.9264471988115,
+      "c_gBBN_duodenum": 5569.744945210703,
+      "c_BCPNm_duodenum": 0.0,
+      "c_BCPNh_duodenum": 0.08853714667192376,
+      "c_BCPN_duodenum": 0.08853714667192376,
+      "c_BBN_jejunum": 1018.5564876666373,
+      "c_gBBN_jejunum": 4623.437802333004,
+      "c_BCPNm_jejunum": 0.0,
+      "c_BCPNh_jejunum": 0.29008512281534327,
+      "c_BCPN_jejunum": 0.29008512281534327,
+      "c_BBN_ileum": 1182.8396014798043,
+      "c_gBBN_ileum": 6614.804556578204,
+      "c_BCPNm_ileum": 0.0,
+      "c_BCPNh_ileum": 0.7453079827221789,
+      "c_BCPN_ileum": 0.7453079827221789,
+      "c_BBN_cecum": 14004.437439969959,
+      "c_gBBN_cecum": 2417.598336523866,
+      "c_BCPNm_cecum": 0.0,
+      "c_BCPNh_cecum": 5.743260414633234,
+      "c_BCPN_cecum": 5.743260414633234,
+      "c_BBN_colon": 10798.284341376855,
+      "c_gBBN_colon": 267.3919694191624,
+      "c_BCPNm_colon": 0.0,
+      "c_BCPNh_colon": 8.359328935606412,
+      "c_BCPN_colon": 8.359328935606412,
+      "c_BBN_rectum": 8001.83625766138,
+      "c_gBBN_rectum": 93.05640216984159,
+      "c_BCPNm_rectum": 0.0,
+      "c_BCPNh_rectum": 7.490952836336926,
+      "c_BCPN_rectum": 7.490952836336926,
+      "c_BBN_plasma": 986.5889443100181,
+      "c_BCPNh_plasma": 71.53801451377731,
+      "c_BCPNm_plasma": 0.0,
+      "c_BCPN_plasma": 71.53801451377731,
+      "c_BCPNh_kidney": 43.43379452534799,
+      "c_BCPNm_kidney": 0.0,
+      "c_BCPN_kidney": 43.43379452534799,
+      "c_gBBN_bile": 27856.62900250831,
+      "c_BCPN_urine": 1737.351780365289,
+      "U_total": 61963.71731221249,
+      "AUC_uro": 47210.45128549522,
+      "AUC_uro_host": 47210.45128549522,
+      "AUC_uro_micro": 0.0,
+      "micro_fraction": 0.0,
+      "ratio_cecum": 0.08028263649289784
+    },
+    "3Mem": {
+      "c_BBN_duodenum": 1708.3925365045081,
+      "c_gBBN_duodenum": 1452.1750099405926,
+      "c_BCPNm_duodenum": 0.8641980153262415,
+      "c_BCPNh_duodenum": 0.023087006381383984,
+      "c_BCPN_duodenum": 0.8872850217076255,
+      "c_BBN_jejunum": 1005.5717766646557,
+      "c_gBBN_jejunum": 1203.5977985267582,
+      "c_BCPNm_jejunum": 6.350989236917906,
+      "c_BCPNh_jejunum": 0.07564279326583534,
+      "c_BCPN_jejunum": 6.426632030183741,
+      "c_BBN_ileum": 1006.0833290902723,
+      "c_gBBN_ileum": 1678.179629010505,
+      "c_BCPNm_ileum": 70.91434535158405,
+      "c_BCPNh_ileum": 0.19434701481813288,
+      "c_BCPN_ileum": 71.10869236640218,
+      "c_BBN_cecum": 1291.6609088206533,
+      "c_gBBN_cecum": 513.3481225364086,
+      "c_BCPNm_cecum": 8700.957954702382,
+      "c_BCPNh_cecum": 1.497616481179081,
+      "c_BCPN_cecum": 8702.455571183562,
+      "c_BBN_colon": 456.4718775103244,
+      "c_gBBN_colon": 60.22774869452673,
+      "c_BCPNm_colon": 11109.235977831822,
+      "c_BCPNh_colon": 2.179784285127914,
+      "c_BCPN_colon": 11111.41576211695,
+      "c_BBN_rectum": 295.12325820924684,
+      "c_gBBN_rectum": 22.089384536967422,
+      "c_BCPNm_rectum": 9320.756667641857,
+      "c_BCPNh_rectum": 1.9533459446786035,
+      "c_BCPN_rectum": 9322.710013586537,
+      "c_BBN_plasma": 257.26360175030135,
+      "c_BCPNh_plasma": 18.654301156158255,
+      "c_BCPNm_plasma": 45.160230135013194,
+      "c_BCPN_plasma": 63.81453129117145,
+      "c_BCPNh_kidney": 11.325825701953228,
+      "c_BCPNm_kidney": 27.418711153402356,
+      "c_BCPN_kidney": 38.744536855355584,
+      "c_gBBN_bile": 7263.913461184981,
+      "c_BCPN_urine": 1549.7814742157032,
+      "U_total": 56935.04025460321,
+      "AUC_uro": 43379.0782892215,
+      "AUC_uro_host": 12844.284414047708,
+      "AUC_uro_micro": 30534.793875173793,
+      "micro_fraction": 0.7039060090578467,
+      "ratio_cecum": 136.3710646322262
+    }
+  },
+  "null": {
+    "urine_target": 1554.6121826130368,
+    "urine_null": 1554.6121826130372,
+    "urine_rel_err": 2.925149796022515e-16,
+    "ratio": 0.08028263662306306,
+    "cecum_null": 1.6287897156032318,
+    "cecum_mech": 9074.805489419206,
+    "auc_null": 44164.97392334907,
+    "auc_mech": 43546.311747256164,
+    "scaling": {
+      "k_ox_host": 2.988879043036514,
+      "k_renal": 3.155206543333533,
+      "k_clear_p": 0.31741809550021943
+    },
+    "profile": {
+      "duodenum": 0.025109151128271487,
+      "jejunum": 0.08226819434710089,
+      "ileum": 0.21136948142102013,
+      "cecum": 1.6287897156032318,
+      "colon": 2.3707072341009634,
+      "rectum": 2.124435611974365
+    },
+    "biliary_escape": {
+      "rows": [
+        {
+          "k_bile_BCPN": 0.0,
+          "frac_of_plasma_clearance": 0.0,
+          "frac_of_nominal_clearance": 0.0,
+          "null_ratio": 0.08028263662306306,
+          "urine_rel_err": 2.925149796022515e-16,
+          "inverts_the_statistic": false
+        },
+        {
+          "k_bile_BCPN": 0.01,
+          "frac_of_plasma_clearance": 0.003669396697037997,
+          "frac_of_nominal_clearance": 0.010204081632653062,
+          "null_ratio": 0.3374607434698182,
+          "urine_rel_err": 0.0,
+          "inverts_the_statistic": false
+        },
+        {
+          "k_bile_BCPN": 0.0227,
+          "frac_of_plasma_clearance": 0.008303039189528374,
+          "frac_of_nominal_clearance": 0.022866928578623956,
+          "null_ratio": 0.6640769391651855,
+          "urine_rel_err": 2.925149796022515e-16,
+          "inverts_the_statistic": false
+        },
+        {
+          "k_bile_BCPN": 0.05,
+          "frac_of_plasma_clearance": 0.024092256721751918,
+          "frac_of_nominal_clearance": 0.049019607843137254,
+          "null_ratio": 1.3661731708568312,
+          "urine_rel_err": 2.925149796022515e-15,
+          "inverts_the_statistic": true
+        },
+        {
+          "k_bile_BCPN": 0.1,
+          "frac_of_plasma_clearance": 0.04196430782803763,
+          "frac_of_nominal_clearance": 0.09345794392523367,
+          "null_ratio": 2.652063705091065,
+          "urine_rel_err": 3.2176647756247662e-15,
+          "inverts_the_statistic": true
+        },
+        {
+          "k_bile_BCPN": 0.3,
+          "frac_of_plasma_clearance": 0.10919227159757383,
+          "frac_of_nominal_clearance": 0.23622047244094488,
+          "null_ratio": 7.795625842025542,
+          "urine_rel_err": 1.4625748980112574e-16,
+          "inverts_the_statistic": true
+        }
+      ],
+      "urine_target": 1554.6121826130368,
+      "min_k_bile_BCPN_breaking_V7": 0.05,
+      "min_frac_breaking_V7": 0.024092256721751918,
+      "min_frac_nominal_breaking_V7": 0.049019607843137254,
+      "interpretation": "The baseline contrast is conditional on assigned exchange and zero biliary delivery. No passive reciprocity constraint is enforced. Exchange changes or biliary delivery can raise a host-only ratio above one; this sweep refits simulated urine, not animal data."
+    }
+  },
+  "null_host_cost": {
+    "k_ox_fold_required": 2.3546930797208634
+  },
+  "capacity_decomposition": {
+    "cells": {
+      "gus0.00_ox0.00": {
+        "gus": 0.0,
+        "ox": 0.0,
+        "c_BCPN_cecum": 1.702957310220937,
+        "c_BCPN_plasma": 21.212025188210852,
+        "c_BCPN_urine": 515.1491831422633,
+        "AUC_uro": 14614.850499750806,
+        "AUC_uro_host": 14614.850499750806,
+        "AUC_uro_micro": 0.0,
+        "ratio_cecum": 0.08028263662290015
+      },
+      "gus1.00_ox0.00": {
+        "gus": 1.0,
+        "ox": 0.0,
+        "c_BCPN_cecum": 5.743260414633234,
+        "c_BCPN_plasma": 71.53801451377731,
+        "c_BCPN_urine": 1737.351780365289,
+        "AUC_uro": 47210.45128549522,
+        "AUC_uro_host": 47210.45128549522,
+        "AUC_uro_micro": 0.0,
+        "ratio_cecum": 0.08028263649289784
+      },
+      "gus0.00_ox1.00": {
+        "gus": 0.0,
+        "ox": 1.0,
+        "c_BCPN_cecum": 3715.7604560333916,
+        "c_BCPN_plasma": 33.838478692236606,
+        "c_BCPN_urine": 821.7916253828872,
+        "AUC_uro": 23208.79702981896,
+        "AUC_uro_host": 10131.55937694249,
+        "AUC_uro_micro": 13077.23765287647,
+        "ratio_cecum": 109.80873253282158
+      },
+      "gus1.00_ox1.00": {
+        "gus": 1.0,
+        "ox": 1.0,
+        "c_BCPN_cecum": 9074.805489419206,
+        "c_BCPN_plasma": 64.01344281363082,
+        "c_BCPN_urine": 1554.6121826130368,
+        "AUC_uro": 43546.311747256164,
+        "AUC_uro_host": 11870.153615517207,
+        "AUC_uro_micro": 31676.158131738957,
+        "ratio_cecum": 141.76405908739605
+      }
+    },
+    "v2_attribution": {
+      "deplete_both": {
+        "gus": 0.05,
+        "ox": 0.05,
+        "c_BCPN_urine": 735.3152073235781,
+        "AUC_uro": 20702.30535234141,
+        "v2_holds": true
+      },
+      "deplete_gus_only": {
+        "gus": 0.05,
+        "ox": 1.0,
+        "c_BCPN_urine": 1083.249972091712,
+        "AUC_uro": 30423.286320353764,
+        "v2_holds": true
+      },
+      "deplete_ox_only": {
+        "gus": 1.0,
+        "ox": 0.05,
+        "c_BCPN_urine": 1702.8786819060265,
+        "AUC_uro": 46510.10898459498,
+        "v2_holds": false
+      }
+    },
+    "oxidase_effect_on_total_AUC": 0.9223871105132856,
+    "oxidase_is_a_systemic_sink": true,
+    "interpretation": "Microbial oxidation raises luminal BCPN by ~3 orders of magnitude and LOWERS total urothelial exposure, because luminal BCPN is a poorly absorbed acid that mostly leaves in faeces. Every systemic check in the battery is carried by beta-glucuronidase; only V1 requires the oxidase. V2 fails outright if the oxidase alone is depleted."
+  },
+  "dose_sensitivity": {
+    "dose_only": [
+      {
+        "multiplier": 0.7,
+        "dose_rate": 418.59999999999997,
+        "ratio_cecum": 142.76807513064946,
+        "c_BCPN_cecum": 6405.981993746948,
+        "micro_fraction": 0.7315363992742016
+      },
+      {
+        "multiplier": 1.0,
+        "dose_rate": 598.0,
+        "ratio_cecum": 141.76405908739605,
+        "c_BCPN_cecum": 9074.805489419206,
+        "micro_fraction": 0.7274131117139871
+      },
+      {
+        "multiplier": 1.3,
+        "dose_rate": 777.4,
+        "ratio_cecum": 140.58878191128372,
+        "c_BCPN_cecum": 11683.987695685246,
+        "micro_fraction": 0.7227236285406171
+      }
+    ],
+    "joint_rescaling": [
+      {
+        "multiplier": 0.7,
+        "ratio_cecum": 141.76405908710893
+      },
+      {
+        "multiplier": 1.0,
+        "ratio_cecum": 141.76405908739605
+      },
+      {
+        "multiplier": 1.3,
+        "ratio_cecum": 141.76405909931609
+      }
+    ],
+    "max_rel_change_dose_only": 0.008290374751387341,
+    "max_rel_change_joint": 8.408362874297662e-11,
+    "interpretation": "Joint rescaling of dose with the microbial Vmax/Km is EXACTLY invariant (machine precision). Moving the dose alone is not: over +/-30% the caecum/plasma ratio moves by about 1%. Dose-convention and drinking-volume uncertainty are the second case, not the first, and must not be waved away by citing homogeneity."
+  },
+  "exposure_index": {
+    "auc_over_urine": 0.761904761904762,
+    "note": "AUC_uro is k_uro/(V_bladder*k_void) times cumulative urinary excretion, exactly, in every arm. It is an assumed exposure index with no urothelial compartment behind it and carries no information beyond U_total."
+  },
+  "scope": {
+    "compartments": [
+      "Plasma",
+      "bile",
+      "bladder",
+      "cecum",
+      "colon",
+      "duodenum",
+      "feces",
+      "ileum",
+      "jejunum",
+      "kidney",
+      "rectum",
+      "stomach",
+      "urine"
+    ],
+    "imported_endpoints": [
+      "metabolite_concentrations",
+      "urinary_metabolite_amounts"
+    ],
+    "functional_endpoints_required": {
+      "KCC6": "chronic inflammation",
+      "KCC7": "immunosuppression",
+      "KCC8": "receptor-mediated effects",
+      "KCC2": "genotoxicity",
+      "KCC10": "altered cell proliferation, cell death or nutrient supply"
+    },
+    "host_response_unidentifiable": true,
+    "genotoxicity_unidentifiable": true,
+    "kcc10_response_unidentifiable": true,
+    "unconstrainable_edges": [
+      "KCC6",
+      "KCC7",
+      "KCC8",
+      "KCC2",
+      "KCC10"
+    ],
+    "basis": "No corresponding functional response endpoint is imported or modelled in this build. Compartment names do not establish assay absence from the deposition or source study."
+  },
+  "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4": true,
+    "V5": true,
+    "V6": true,
+    "V7": true,
+    "V7b": true,
+    "V8": true,
+    "V9": true,
+    "V10": true,
+    "V11": true,
+    "V12": true
+  },
+  "identifiability": {
+    "facts": {
+      "arms_with_urine": [
+        "B",
+        "BA"
+      ],
+      "arms_with_bile": [
+        "2Mem",
+        "3Mem"
+      ],
+      "arms_with_cecum": [
+        "2Mem",
+        "3Mem",
+        "B",
+        "BA",
+        "Germ-Free",
+        "Monocolonized"
+      ],
+      "arms_with_plasma": [
+        "2Mem",
+        "3Mem",
+        "B",
+        "BA",
+        "Germ-Free",
+        "Monocolonized"
+      ],
+      "arms_with_kidney": [
+        "2Mem",
+        "3Mem",
+        "B",
+        "BA",
+        "Germ-Free",
+        "Monocolonized"
+      ],
+      "coverage": {
+        "Plasma": {
+          "compartment": "Plasma",
+          "records": 133,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "bile": {
+          "compartment": "bile",
+          "records": 32,
+          "arms": [
+            "2Mem",
+            "3Mem"
+          ],
+          "n_arms": 2,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "bladder": {
+          "compartment": "bladder",
+          "records": 190,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "cecum": {
+          "compartment": "cecum",
+          "records": 485,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "colon": {
+          "compartment": "colon",
+          "records": 422,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "duodenum": {
+          "compartment": "duodenum",
+          "records": 267,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "feces": {
+          "compartment": "feces",
+          "records": 84,
+          "arms": [
+            "B",
+            "BA"
+          ],
+          "n_arms": 2,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "ileum": {
+          "compartment": "ileum",
+          "records": 267,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "jejunum": {
+          "compartment": "jejunum",
+          "records": 267,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "kidney": {
+          "compartment": "kidney",
+          "records": 109,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "rectum": {
+          "compartment": "rectum",
+          "records": 295,
+          "arms": [
+            "2Mem",
+            "3Mem",
+            "B",
+            "BA",
+            "Germ-Free",
+            "Monocolonized"
+          ],
+          "n_arms": 6,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "stomach": {
+          "compartment": "stomach",
+          "records": 27,
+          "arms": [
+            "B",
+            "BA"
+          ],
+          "n_arms": 2,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        },
+        "urine": {
+          "compartment": "urine",
+          "records": 90,
+          "arms": [
+            "B",
+            "BA"
+          ],
+          "n_arms": 2,
+          "count_unit": "LC-MS acquisition",
+          "biological_n_verified": false
+        }
+      },
+      "metadata_conflicts": [
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R1_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R2_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R3_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R4_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R5_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R6_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch1R7_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R1_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R2_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R3_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R4_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R5_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R6_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_BA_Batch2R7_LVR_20X.d",
+          "arm": "BA",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch1R1_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch1R2_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch1R3_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch1R4_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch1R5_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R1_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R2_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R3_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R4_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R5_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R6_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_B_Batch2R7_LVR_20X.d",
+          "arm": "B",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R1_LVR.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R2_LVR.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R3_LVR.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R4_LVR.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R5_LVR.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R6_LVR.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R1_LVR.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R2_LVR.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R3_LVR.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R4_LVR.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R5_LVR.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R6_LVR.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R1_LVR_20X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R2_LVR_20X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_BBN_2wk_GF_R3_LVR_20X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_GF_R1_LVR_100X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_GF_R2_LVR_100X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_GF_R3_LVR_100X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_GF_R4_LVR_100X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_GF_R5_LVR_100X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_GF_R6_LVR_100X.d",
+          "arm": "Germ-Free",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R1_LVR_100X.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R2_LVR_100X.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R3_LVR_100X.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R4_LVR_100X.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R5_LVR_100X.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_BBN_2wk_Eflex_R6_LVR_100X.d",
+          "arm": "Monocolonized",
+          "week": "2",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_6_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_7_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_8_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_9_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_10_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_6A_7wk.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_7A_7wk.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_9A_7wk.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_10A_7wk.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_6_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_7_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_8_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_9_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_10_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_6A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_7A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_9A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmPoroshell120HPHC18_LVR_10A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_6_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_7_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_8_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_9_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_10_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_6A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_7A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_9A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmPoroshell120HPHC18_LVR_10A_7wk_degluc.d",
+          "arm": "BA",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_MSMS_20_Neg_10cmPoroshell120HPHC18_LVR_7_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_MSMS_20_Neg_10cmPoroshell120HPHC18_LVR_7_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_MSMS_40_Neg_10cmPoroshell120HPHC18_LVR_7_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_MSMS_40_Neg_10cmPoroshell120HPHC18_LVR_7_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_MSMS_10_Neg_10cmPoroshell120HPHC18_LVR_7_7wk.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_MSMS_10_Neg_10cmPoroshell120HPHC18_LVR_7_7wk_degluc.d",
+          "arm": "B",
+          "week": "7",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R1_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R2_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R3_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R4_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R5_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R6_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R7_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_2Mem_R8_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R1_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R2_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R3_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R4_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R5_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R6_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R7_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Neg_10cmHPHC18_3wk_3Mem_R8_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R1_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R2_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R3_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R4_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R5_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R6_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R7_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_2Mem_R8_LVR_20XBeforeDG.d",
+          "arm": "2Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R1_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R2_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R3_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R4_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R5_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R6_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R7_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        },
+        {
+          "source_name": "6550_Pos_10cmHPHC18_3wk_3Mem_R8_LVR_20XBeforeDG.d",
+          "arm": "3Mem",
+          "week": "3",
+          "recorded_compartment": "colon",
+          "filename_compartment": "liver"
+        }
+      ],
+      "biological_n_verified": false,
+      "urine_bile_disjoint": true,
+      "n_arms_total": 6,
+      "non_arm_labels": [
+        "DBN",
+        "DBNA",
+        "EHBN",
+        "EHBNA",
+        "Experimental Blank",
+        "PBN",
+        "PBNA"
+      ]
+    },
+    "metric": "worst relative residual in the measurement set, 15% relative error",
+    "sets": {
+      "urine_only": {
+        "ridge_width": 2.45,
+        "ridge_width_mean_metric": 2.45,
+        "saturated": true,
+        "contiguous": true,
+        "uninformative_arms": []
+      },
+      "urine_plus_lumen": {
+        "ridge_width": 0.576470588235294,
+        "ridge_width_mean_metric": 0.8647058823529412,
+        "saturated": false,
+        "contiguous": true,
+        "uninformative_arms": []
+      },
+      "lumen_all_arms": {
+        "ridge_width": 0.8647058823529414,
+        "ridge_width_mean_metric": 1.1529411764705886,
+        "saturated": false,
+        "contiguous": true,
+        "uninformative_arms": [
+          "Germ-Free"
+        ]
+      },
+      "kidney_all_arms": {
+        "ridge_width": 2.45,
+        "ridge_width_mean_metric": 2.45,
+        "saturated": true,
+        "contiguous": true,
+        "uninformative_arms": [
+          "Germ-Free",
+          "2Mem"
+        ]
+      },
+      "lumen_plus_kidney": {
+        "ridge_width": 0.43235294117647055,
+        "ridge_width_mean_metric": 1.008823529411765,
+        "saturated": false,
+        "contiguous": true,
+        "uninformative_arms": [
+          "Germ-Free",
+          "2Mem"
+        ]
+      }
+    }
+  },
+  "ensemble": {
+    "n_ok": 400,
+    "n_requested": 400,
+    "seed": 20260825,
+    "bands": {
+      "B": {
+        "AUC_uro": {
+          "p5": 17043.083297938854,
+          "p50": 43701.41434463222,
+          "p95": 109778.15281992046
+        },
+        "AUC_uro_micro": {
+          "p5": 11724.969207968521,
+          "p50": 30573.45108751413,
+          "p95": 72454.26573653417
+        },
+        "c_BCPN_urine": {
+          "p5": 826.2259308435706,
+          "p50": 1566.0056667702777,
+          "p95": 3012.902356189773
+        },
+        "c_BCPN_cecum": {
+          "p5": 6768.544088192832,
+          "p50": 8839.34003097095,
+          "p95": 11812.914623179076
+        },
+        "c_BCPN_plasma": {
+          "p5": 34.26527569315437,
+          "p50": 66.31375164349474,
+          "p95": 120.96766915052828
+        },
+        "c_BCPN_kidney": {
+          "p5": 20.30100245131606,
+          "p50": 40.2955378590486,
+          "p95": 75.7580069994783
+        },
+        "micro_fraction": {
+          "p5": 0.4813154917684358,
+          "p50": 0.7168873315567378,
+          "p95": 0.8625051443441122
+        },
+        "ratio_cecum": {
+          "p5": 74.65355063117222,
+          "p50": 137.7821996655186,
+          "p95": 260.9616112061017
+        },
+        "AUC_rel_conventional": {
+          "p5": 1.0,
+          "p50": 1.0,
+          "p95": 1.0
+        }
+      },
+      "BA": {
+        "AUC_uro": {
+          "p5": 8109.5826543435605,
+          "p50": 20747.79879215945,
+          "p95": 55219.99947417157
+        },
+        "AUC_uro_micro": {
+          "p5": 1071.6483081598021,
+          "p50": 3145.652667041092,
+          "p95": 9776.65153495248
+        },
+        "c_BCPN_urine": {
+          "p5": 360.6792136437237,
+          "p50": 794.7812795995624,
+          "p95": 1586.8926678032794
+        },
+        "c_BCPN_cecum": {
+          "p5": 398.43907187014827,
+          "p50": 865.100590259796,
+          "p95": 1855.5411556572703
+        },
+        "c_BCPN_plasma": {
+          "p5": 14.522056859839488,
+          "p50": 31.251801581073288,
+          "p95": 65.6527332041573
+        },
+        "c_BCPN_kidney": {
+          "p5": 9.066737248144443,
+          "p50": 18.918249695794614,
+          "p95": 43.73509318555182
+        },
+        "micro_fraction": {
+          "p5": 0.056983782900235584,
+          "p50": 0.1513099219313527,
+          "p95": 0.3538044248718592
+        },
+        "ratio_cecum": {
+          "p5": 10.451856864792527,
+          "p50": 28.286712171685032,
+          "p95": 71.79366946721879
+        },
+        "AUC_rel_conventional": {
+          "p5": 0.29295967101350945,
+          "p50": 0.4886272031396145,
+          "p95": 0.7685620336301101
+        }
+      },
+      "Germ-Free": {
+        "AUC_uro": {
+          "p5": 4887.233544898466,
+          "p50": 14439.440843934019,
+          "p95": 38220.89689095107
+        },
+        "AUC_uro_micro": {
+          "p5": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "c_BCPN_urine": {
+          "p5": 220.84458171810135,
+          "p50": 529.9676423019009,
+          "p95": 1201.8879505492798
+        },
+        "c_BCPN_cecum": {
+          "p5": 0.6555223297360607,
+          "p50": 1.6650660168665672,
+          "p95": 4.496523898808644
+        },
+        "c_BCPN_plasma": {
+          "p5": 8.777593570300956,
+          "p50": 21.411793922629535,
+          "p95": 49.05821767735915
+        },
+        "c_BCPN_kidney": {
+          "p5": 5.3591252494089145,
+          "p50": 13.353933111504283,
+          "p95": 31.83753709638069
+        },
+        "micro_fraction": {
+          "p5": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "ratio_cecum": {
+          "p5": 0.043166354904054315,
+          "p50": 0.08025279031056737,
+          "p95": 0.13347697973838948
+        },
+        "AUC_rel_conventional": {
+          "p5": 0.16786906541743757,
+          "p50": 0.33982535502569633,
+          "p95": 0.5771430980000788
+        }
+      },
+      "Monocolonized": {
+        "AUC_uro": {
+          "p5": 17044.60721569589,
+          "p50": 43528.75851228211,
+          "p95": 103293.38599212056
+        },
+        "AUC_uro_micro": {
+          "p5": 10934.791626303042,
+          "p50": 28107.132160996116,
+          "p95": 67546.43101934258
+        },
+        "c_BCPN_urine": {
+          "p5": 813.5735196371417,
+          "p50": 1540.1599860159754,
+          "p95": 2972.4630795092344
+        },
+        "c_BCPN_cecum": {
+          "p5": 6010.491455325987,
+          "p50": 8178.729805835077,
+          "p95": 10980.956176048145
+        },
+        "c_BCPN_plasma": {
+          "p5": 33.49874740784048,
+          "p50": 65.05683892373918,
+          "p95": 120.56779041082262
+        },
+        "c_BCPN_kidney": {
+          "p5": 19.839815941306995,
+          "p50": 39.60694956458143,
+          "p95": 75.51214554229247
+        },
+        "micro_fraction": {
+          "p5": 0.43154412671333314,
+          "p50": 0.6804209808051934,
+          "p95": 0.8416125500578683
+        },
+        "ratio_cecum": {
+          "p5": 68.4951961839079,
+          "p50": 129.70017049213288,
+          "p95": 249.40282619320908
+        },
+        "AUC_rel_conventional": {
+          "p5": 0.9551117848936027,
+          "p50": 0.9869562377831812,
+          "p95": 1.0234530373169124
+        }
+      },
+      "2Mem": {
+        "AUC_uro": {
+          "p5": 16370.74722830433,
+          "p50": 45492.44397348004,
+          "p95": 127768.87786280575
+        },
+        "AUC_uro_micro": {
+          "p5": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "c_BCPN_urine": {
+          "p5": 706.9814668114689,
+          "p50": 1722.7194538182775,
+          "p95": 3839.5155976223023
+        },
+        "c_BCPN_cecum": {
+          "p5": 1.9572023487081809,
+          "p50": 5.58397240350606,
+          "p95": 13.756355270863576
+        },
+        "c_BCPN_plasma": {
+          "p5": 28.51206198141363,
+          "p50": 71.59832458173435,
+          "p95": 154.37222343945814
+        },
+        "c_BCPN_kidney": {
+          "p5": 17.8616964751594,
+          "p50": 43.707868379807465,
+          "p95": 106.57798335351534
+        },
+        "micro_fraction": {
+          "p5": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "ratio_cecum": {
+          "p5": 0.043166354473443865,
+          "p50": 0.08025279026379639,
+          "p95": 0.13347697973633724
+        },
+        "AUC_rel_conventional": {
+          "p5": 0.5475898876240755,
+          "p50": 1.0889018557781316,
+          "p95": 1.7394217515635926
+        }
+      },
+      "3Mem": {
+        "AUC_uro": {
+          "p5": 17109.523529746864,
+          "p50": 43937.89337419726,
+          "p95": 108123.28041745065
+        },
+        "AUC_uro_micro": {
+          "p5": 11167.692013238018,
+          "p50": 28728.055881568776,
+          "p95": 69051.51628087476
+        },
+        "c_BCPN_urine": {
+          "p5": 818.9662685945981,
+          "p50": 1559.3034628842747,
+          "p95": 2983.6325888146885
+        },
+        "c_BCPN_cecum": {
+          "p5": 6330.010336287389,
+          "p50": 8391.699269028555,
+          "p95": 11318.894586412667
+        },
+        "c_BCPN_plasma": {
+          "p5": 33.82375093517501,
+          "p50": 66.17076097568011,
+          "p95": 120.64476100050854
+        },
+        "c_BCPN_kidney": {
+          "p5": 20.143083682595126,
+          "p50": 39.8968068800974,
+          "p95": 76.06370937621045
+        },
+        "micro_fraction": {
+          "p5": 0.4412051005983452,
+          "p50": 0.6892478992574396,
+          "p95": 0.8449467035175209
+        },
+        "ratio_cecum": {
+          "p5": 69.92803791976664,
+          "p50": 132.46683108384428,
+          "p95": 252.67333918570554
+        },
+        "AUC_rel_conventional": {
+          "p5": 0.9756821787372508,
+          "p50": 0.9952643559540341,
+          "p95": 1.0248229037667063
+        }
+      }
+    },
+    "audit": {
+      "V1": 1.0,
+      "V2": 0.9975,
+      "V3": 1.0,
+      "V4": 1.0,
+      "V5": 0.9,
+      "V6": 1.0,
+      "V7": 1.0,
+      "V8": 0.9975,
+      "V8-superseded": 0.64,
+      "V12": 0.9975
+    },
+    "auc_2mem_over_b": {
+      "p5": 0.5475898876240755,
+      "p50": 1.0889018557781316,
+      "p95": 1.7394217515635926
+    },
+    "null_cost": {
+      "n_ok": 40,
+      "n_requested": 40,
+      "seed": 20260826,
+      "fold": {
+        "p5": 1.4203345821307303,
+        "p50": 2.1609311062625913,
+        "p95": 3.177104289444246
+      },
+      "frac_above_1p5": 0.9
+    },
+    "structural_checks_not_audited": [
+      "V10",
+      "V11"
+    ],
+    "unaudited_reason": {
+      "V10": "conditional synthetic profiles are not recomputed for each draw",
+      "V11": "implementation scope; no corresponding functional endpoints imported",
+      "V7b": "biliary-route sensitivity is swept separately; its zero baseline is not perturbed"
+    },
+    "interpretation": "Heuristic sensitivity bands over parameters that were chosen, not measured. NOT a posterior, confidence interval or credible interval. Structure and arm capacities are not sampled."
+  },
+  "two_member_gus_sensitivity": {
+    "rows": [
+      {
+        "gus": 0.05,
+        "AUC_uro": 18732.705686846162,
+        "frac_of_conventional": 0.4301789275650079,
+        "exceeds_abx": false,
+        "exceeds_conventional_95": false,
+        "exceeds_gf_1p5": false
+      },
+      {
+        "gus": 0.1,
+        "AUC_uro": 22650.371431653668,
+        "frac_of_conventional": 0.5201444283758626,
+        "exceeds_abx": true,
+        "exceeds_conventional_95": false,
+        "exceeds_gf_1p5": true
+      },
+      {
+        "gus": 0.2,
+        "AUC_uro": 29601.13801050253,
+        "frac_of_conventional": 0.6797622306639479,
+        "exceeds_abx": true,
+        "exceeds_conventional_95": false,
+        "exceeds_gf_1p5": true
+      },
+      {
+        "gus": 0.3,
+        "AUC_uro": 35023.081035827105,
+        "frac_of_conventional": 0.8042720412029819,
+        "exceeds_abx": true,
+        "exceeds_conventional_95": false,
+        "exceeds_gf_1p5": true
+      },
+      {
+        "gus": 0.5,
+        "AUC_uro": 41619.96455913637,
+        "frac_of_conventional": 0.9557632527112662,
+        "exceeds_abx": true,
+        "exceeds_conventional_95": true,
+        "exceeds_gf_1p5": true
+      },
+      {
+        "gus": 0.7,
+        "AUC_uro": 44863.29584782367,
+        "frac_of_conventional": 1.0302432984040373,
+        "exceeds_abx": true,
+        "exceeds_conventional_95": true,
+        "exceeds_gf_1p5": true
+      },
+      {
+        "gus": 1.0,
+        "AUC_uro": 47210.45128549522,
+        "frac_of_conventional": 1.0841435104654973,
+        "exceeds_abx": true,
+        "exceeds_conventional_95": true,
+        "exceeds_gf_1p5": true
+      }
+    ],
+    "conventional_AUC": 43546.311747256164,
+    "abx_AUC": 20702.30535234141,
+    "gf_AUC": 14614.850499750806,
+    "min_gus_beating_abx": 0.1
+  }
+}

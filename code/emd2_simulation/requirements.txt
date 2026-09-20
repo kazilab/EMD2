@@ -1,0 +1,10 @@
+# Core EMD2 simulation: compartmental integration, host-only null refit,
+# identifiability profiling, uncertainty ensemble and figure generation.
+# The deposition files under data/ are plain TSV and are read with the stdlib
+# csv module, so no pandas dependency is incurred.
+numpy>=2.0
+scipy>=1.15
+matplotlib>=3.8
+
+# Regression tests only.
+pytest>=8.0

@@ -1,0 +1,6411 @@
+{
+  "schema_version": 1,
+  "analysis_kind": "exploratory secondary analysis of published experiments",
+  "source": {
+    "citation": "Roje et al. Nature 632, 1137–1144 (2024)",
+    "url": "https://doi.org/10.1038/s41586-024-07754-w",
+    "workbook": "41586_2024_7754_MOESM4_ESM.xlsx",
+    "sha256": "fe43970068026537c9f95b8132ded29d93397598cc28aab74e381147e341928c",
+    "selection": "S4, S5, S15, S16, S18, S23, S32, S37–S40"
+  },
+  "input_sha256": "806e61f6105a877954859838f090bdbea928e1cb481fcbb17e8388bf609e050b",
+  "input_content_sha256": "95bbe8cf92cc158b1c7aeb4df89f3b411fbe5e7c0d36a1591cb5ec3799066bf5",
+  "seed": 20260920,
+  "n_bootstrap": 20000,
+  "methods": {
+    "estimand": "difference of arithmetic means (group_a minus group_b); same-matrix ratio of arithmetic means",
+    "intervals": "95% percentile bootstrap, resampling animals or paired donors; not simultaneous intervals",
+    "tests": "two-sided independent-label permutation or paired donor sign-flip; Holm within stated families",
+    "zeros": "reported zeros retained; no invented LOD or pseudocount",
+    "strata": "collection week and analytical batch kept separate; no pooled longitudinal test",
+    "interpretation": "No cross-compartment unity cutoff, kinetic calibration, external validation or functional KCC response is inferred."
+  },
+  "consortium": [
+    {
+      "Tissue": "CEC",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 3.357670167046739,
+      "mean_b": 0.9630156989979362,
+      "median_a": 3.2502526363636353,
+      "median_b": 0.795455877828054,
+      "mean_difference": 2.3946544680488024,
+      "difference_ci95": [
+        1.4873406956359128,
+        3.288025064084568
+      ],
+      "mean_ratio": 3.4866203848395774,
+      "ratio_ci95": [
+        2.374372158513051,
+        5.056062844661472
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.0003108003108003108,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 1.80501418867925,
+          "source_rows": [
+            330
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 4.54725,
+          "source_rows": [
+            331
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 4.58388577358491,
+          "source_rows": [
+            332
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 3.773304,
+          "source_rows": [
+            333
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 5.16373838709677,
+          "source_rows": [
+            334
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 1.61021571428571,
+          "source_rows": [
+            335
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 2.650752,
+          "source_rows": [
+            336
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 2.72720127272727,
+          "source_rows": [
+            337
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 1.37663513513513,
+          "source_rows": [
+            322
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.774552461538461,
+          "source_rows": [
+            323
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 1.1499975,
+          "source_rows": [
+            324
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.757934181818182,
+          "source_rows": [
+            325
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 1.66392,
+          "source_rows": [
+            326
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.816359294117647,
+          "source_rows": [
+            327
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.471368655737705,
+          "source_rows": [
+            328
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.693358363636364,
+          "source_rows": [
+            329
+          ]
+        }
+      ],
+      "p_holm": 0.002797202797202797,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "COL",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 1.7762927060439564,
+      "mean_b": 0.5307286481229143,
+      "median_a": 1.5347164285714299,
+      "median_b": 0.5128416,
+      "mean_difference": 1.245564057921042,
+      "difference_ci95": [
+        0.4465964028792794,
+        2.1460878783674304
+      ],
+      "mean_ratio": 3.3468943354129532,
+      "ratio_ci95": [
+        1.740380826004386,
+        6.204183651259244
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.00777000777000777,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 1.673364,
+          "source_rows": [
+            362
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 3.03666507692308,
+          "source_rows": [
+            363
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 0.97944,
+          "source_rows": [
+            364
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 1.29192771428571,
+          "source_rows": [
+            365
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 4.159512,
+          "source_rows": [
+            366
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 1.46739857142857,
+          "source_rows": [
+            367
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            368
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 1.60203428571429,
+          "source_rows": [
+            369
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 0.5491512,
+          "source_rows": [
+            354
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.426924,
+          "source_rows": [
+            355
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 1.1540475,
+          "source_rows": [
+            356
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.651236275862069,
+          "source_rows": [
+            357
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.58318324137931,
+          "source_rows": [
+            358
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.476532,
+          "source_rows": [
+            359
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            360
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.404754967741935,
+          "source_rows": [
+            361
+          ]
+        }
+      ],
+      "p_holm": 0.05439005439005439,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "KID",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 11.99694731552801,
+      "mean_b": 18.879175180363102,
+      "median_a": 5.55075225705329,
+      "median_b": 4.39935313043478,
+      "mean_difference": -6.882227864835093,
+      "difference_ci95": [
+        -32.07027420236863,
+        12.869052658523854
+      ],
+      "mean_ratio": 0.6354592931584457,
+      "ratio_ci95": [
+        0.16413960481450734,
+        3.9782292378152
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.6904428904428904,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 6.14674924137931,
+          "source_rows": [
+            314
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 24.1632638181818,
+          "source_rows": [
+            315
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 4.95475527272727,
+          "source_rows": [
+            316
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 8.17282072340425,
+          "source_rows": [
+            317
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 44.1756789230769,
+          "source_rows": [
+            318
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 3.531852,
+          "source_rows": [
+            319
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 2.14982,
+          "source_rows": [
+            320
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 2.68063854545455,
+          "source_rows": [
+            321
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 1.52118073469388,
+          "source_rows": [
+            306
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 7.02654026086956,
+          "source_rows": [
+            307
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 30.988062,
+          "source_rows": [
+            308
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 93.4966505454546,
+          "source_rows": [
+            309
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 1.73530630188679,
+          "source_rows": [
+            310
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 1.1527596,
+          "source_rows": [
+            311
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 1.772166,
+          "source_rows": [
+            312
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 13.340736,
+          "source_rows": [
+            313
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "LVR",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 17.427677816236237,
+      "mean_b": 19.157824199132307,
+      "median_a": 4.009037,
+      "median_b": 5.5877335116279045,
+      "mean_difference": -1.73014638289607,
+      "difference_ci95": [
+        -26.38734038561648,
+        23.065467473882663
+      ],
+      "mean_ratio": 0.9096898288181164,
+      "ratio_ci95": [
+        0.15279349016369748,
+        6.537376761254007
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.8508158508158508,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 2.34959127272727,
+          "source_rows": [
+            298
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 45.3295646086956,
+          "source_rows": [
+            299
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 4.283854,
+          "source_rows": [
+            300
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 9.04360736842105,
+          "source_rows": [
+            301
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 69.7576422162162,
+          "source_rows": [
+            302
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 3.73422,
+          "source_rows": [
+            303
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 3.05877,
+          "source_rows": [
+            304
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 1.86417306382979,
+          "source_rows": [
+            305
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 1.31308702325581,
+          "source_rows": [
+            290
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 10.8079158461538,
+          "source_rows": [
+            291
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 70.2778151489362,
+          "source_rows": [
+            292
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 58.891371,
+          "source_rows": [
+            293
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.678132,
+          "source_rows": [
+            294
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.649989333333333,
+          "source_rows": [
+            295
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.78190324137931,
+          "source_rows": [
+            296
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 9.86238,
+          "source_rows": [
+            297
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "PL",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 4.2764355,
+      "mean_b": 5.26241475,
+      "median_a": 1.2607650000000001,
+      "median_b": 0.7587539999999999,
+      "mean_difference": -0.9859792499999998,
+      "difference_ci95": [
+        -8.27724133125,
+        6.067907099999998
+      ],
+      "mean_ratio": 0.8126374873816246,
+      "ratio_ci95": [
+        0.14366713433834402,
+        6.309264737686766
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.8013986013986014,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 1.440828,
+          "source_rows": [
+            10,
+            26
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 6.718518,
+          "source_rows": [
+            11,
+            27
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 1.03815,
+          "source_rows": [
+            12,
+            28
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 1.573182,
+          "source_rows": [
+            13,
+            29
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 21.090078,
+          "source_rows": [
+            14,
+            30
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 1.080702,
+          "source_rows": [
+            15,
+            31
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.62532,
+          "source_rows": [
+            16,
+            32
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.644706,
+          "source_rows": [
+            17,
+            33
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 0.669168,
+          "source_rows": [
+            2,
+            18
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.84834,
+          "source_rows": [
+            3,
+            19
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 13.044402,
+          "source_rows": [
+            4,
+            20
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 23.20515,
+          "source_rows": [
+            5,
+            21
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.491346,
+          "source_rows": [
+            6,
+            22
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.353052,
+          "source_rows": [
+            7,
+            23
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.594108,
+          "source_rows": [
+            8,
+            24
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 2.893752,
+          "source_rows": [
+            9,
+            25
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "REC",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 1.4411646784140777,
+      "mean_b": 0.21963670676691738,
+      "median_a": 1.311914117647059,
+      "median_b": 0.160056,
+      "mean_difference": 1.2215279716471603,
+      "difference_ci95": [
+        0.7085981351300695,
+        1.753742606878868
+      ],
+      "mean_ratio": 6.561583897465139,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.0004662004662004662,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 0.900526235294118,
+          "source_rows": [
+            394
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 2.59525371428571,
+          "source_rows": [
+            395
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 1.89203684210526,
+          "source_rows": [
+            396
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 1.723302,
+          "source_rows": [
+            397
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 2.31907263157895,
+          "source_rows": [
+            398
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.511497,
+          "source_rows": [
+            399
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.753511846153846,
+          "source_rows": [
+            400
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.834117157894737,
+          "source_rows": [
+            401
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 0.320112,
+          "source_rows": [
+            386
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.0,
+          "source_rows": [
+            387
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 0.559666285714286,
+          "source_rows": [
+            388
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.554132,
+          "source_rows": [
+            389
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.323183368421053,
+          "source_rows": [
+            390
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.0,
+          "source_rows": [
+            391
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            392
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.0,
+          "source_rows": [
+            393
+          ]
+        }
+      ],
+      "p_holm": 0.0037296037296037296,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "SI1",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 1.9312550791973546,
+      "mean_b": 2.6499313738569636,
+      "median_a": 1.213108322981367,
+      "median_b": 0.66155629787234,
+      "mean_difference": -0.718676294659609,
+      "difference_ci95": [
+        -4.287717233010747,
+        2.3848074122108596
+      ],
+      "mean_ratio": 0.7287943749224046,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.7201243201243201,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 0.704499882352941,
+          "source_rows": [
+            426
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 2.210736,
+          "source_rows": [
+            427
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 1.56849,
+          "source_rows": [
+            428
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.995849217391304,
+          "source_rows": [
+            429
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 8.04353210526316,
+          "source_rows": [
+            430
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.0,
+          "source_rows": [
+            431
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 1.43036742857143,
+          "source_rows": [
+            432
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.496566,
+          "source_rows": [
+            433
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 0.0,
+          "source_rows": [
+            418
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 1.565352,
+          "source_rows": [
+            419
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 5.69513368421053,
+          "source_rows": [
+            420
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 12.6158527109005,
+          "source_rows": [
+            421
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.0,
+          "source_rows": [
+            422
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.0,
+          "source_rows": [
+            423
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            424
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 1.32311259574468,
+          "source_rows": [
+            425
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "SI2",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 0.77571039047583,
+      "mean_b": 0.513444339160839,
+      "median_a": 0.3186613211781205,
+      "median_b": 0.1291285384615385,
+      "mean_difference": 0.26226605131499103,
+      "difference_ci95": [
+        -0.6876301491952376,
+        1.3838597813652005
+      ],
+      "mean_ratio": 1.5107974347202509,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.6410256410256411,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 0.341939739130435,
+          "source_rows": [
+            458
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 1.16075627027027,
+          "source_rows": [
+            459
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 0.388491428571429,
+          "source_rows": [
+            460
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.295382903225806,
+          "source_rows": [
+            461
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 4.0191127826087,
+          "source_rows": [
+            462
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.0,
+          "source_rows": [
+            463
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            464
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.0,
+          "source_rows": [
+            465
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 0.0,
+          "source_rows": [
+            450
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.289637454545455,
+          "source_rows": [
+            451
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 2.384918,
+          "source_rows": [
+            452
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 1.17474218181818,
+          "source_rows": [
+            453
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.0,
+          "source_rows": [
+            454
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.0,
+          "source_rows": [
+            455
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            456
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.258257076923077,
+          "source_rows": [
+            457
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    },
+    {
+      "Tissue": "SI3",
+      "group_a": "3Mem",
+      "group_b": "2Mem",
+      "unit": "source-table µM",
+      "n_a": 8,
+      "n_b": 8,
+      "paired": false,
+      "mean_a": 0.6190166130952379,
+      "mean_b": 0.8040826875000001,
+      "median_a": 0.1355535,
+      "median_b": 0.47010149999999995,
+      "mean_difference": -0.1850660744047622,
+      "difference_ci95": [
+        -1.0099266656249999,
+        0.6297891433779751
+      ],
+      "mean_ratio": 0.7698419860522588,
+      "ratio_ci95": [
+        0.12436717402686312,
+        2.8218133991014853
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.6646464646464646,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 0.0,
+          "source_rows": [
+            490
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 2.22942857142857,
+          "source_rows": [
+            491
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 0.271107,
+          "source_rows": [
+            492
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.801543333333333,
+          "source_rows": [
+            493
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 1.650054,
+          "source_rows": [
+            494
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.0,
+          "source_rows": [
+            495
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            496
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.0,
+          "source_rows": [
+            497
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 0.420912,
+          "source_rows": [
+            482
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.519291,
+          "source_rows": [
+            483
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 2.359212,
+          "source_rows": [
+            484
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 2.192184,
+          "source_rows": [
+            485
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.0,
+          "source_rows": [
+            486
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 0.274392,
+          "source_rows": [
+            487
+          ]
+        },
+        {
+          "id": "R7",
+          "value": 0.0,
+          "source_rows": [
+            488
+          ]
+        },
+        {
+          "id": "R8",
+          "value": 0.6666705,
+          "source_rows": [
+            489
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S39: all nine BCPN compartments",
+      "family_size": 9
+    }
+  ],
+  "human_culture": [
+    {
+      "condition": "10%O2",
+      "reference": "0%O2",
+      "donor_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G10",
+        "G11",
+        "G14"
+      ],
+      "unit": "nM culture medium",
+      "n_a": 10,
+      "n_b": 10,
+      "paired": true,
+      "mean_a": 30.607842622975426,
+      "mean_b": 2.682628818427835,
+      "median_a": 8.011521636482279,
+      "median_b": 0.0,
+      "mean_difference": 27.92521380454759,
+      "difference_ci95": [
+        2.0649324798653153,
+        59.69492214682648
+      ],
+      "mean_ratio": 11.40964505142134,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.09375,
+      "permutation_method": "exact paired sign-flip",
+      "n_bootstrap": 20000,
+      "p_holm": 0.1875,
+      "multiplicity_family": "S23: two oxygen contrasts",
+      "family_size": 2
+    },
+    {
+      "condition": "21%O2",
+      "reference": "0%O2",
+      "donor_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G10",
+        "G11",
+        "G14"
+      ],
+      "unit": "nM culture medium",
+      "n_a": 10,
+      "n_b": 10,
+      "paired": true,
+      "mean_a": 16.715642434822243,
+      "mean_b": 2.682628818427835,
+      "median_a": 0.0,
+      "median_b": 0.0,
+      "mean_difference": 14.033013616394408,
+      "difference_ci95": [
+        -3.2668069059886125,
+        36.93713723264083
+      ],
+      "mean_ratio": 6.231067943502713,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.5,
+      "permutation_method": "exact paired sign-flip",
+      "n_bootstrap": 20000,
+      "p_holm": 0.5,
+      "multiplicity_family": "S23: two oxygen contrasts",
+      "family_size": 2
+    }
+  ],
+  "human_donors": [
+    {
+      "donor": "G01",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "donor": "G01",
+      "oxygen": "10%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "donor": "G01",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "donor": "G02",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "donor": "G02",
+      "oxygen": "10%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "donor": "G02",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "donor": "G03",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 2,
+      "source_rows": [
+        111,
+        112
+      ]
+    },
+    {
+      "donor": "G03",
+      "oxygen": "10%O2",
+      "mean_nM": 101.670506540168,
+      "technical_n": 1,
+      "source_rows": [
+        110
+      ]
+    },
+    {
+      "donor": "G03",
+      "oxygen": "21%O2",
+      "mean_nM": 106.35360081626055,
+      "technical_n": 2,
+      "source_rows": [
+        113,
+        114
+      ]
+    },
+    {
+      "donor": "G05",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "donor": "G05",
+      "oxygen": "10%O2",
+      "mean_nM": 129.39088113178425,
+      "technical_n": 4,
+      "source_rows": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "donor": "G05",
+      "oxygen": "21%O2",
+      "mean_nM": 50.3105698776266,
+      "technical_n": 4,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "donor": "G06",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "donor": "G06",
+      "oxygen": "10%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "donor": "G06",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "donor": "G07",
+      "oxygen": "0%O2",
+      "mean_nM": 26.82628818427835,
+      "technical_n": 4,
+      "source_rows": [
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "donor": "G07",
+      "oxygen": "10%O2",
+      "mean_nM": 12.2883115789549,
+      "technical_n": 4,
+      "source_rows": [
+        54,
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "donor": "G07",
+      "oxygen": "21%O2",
+      "mean_nM": 10.492253654335288,
+      "technical_n": 4,
+      "source_rows": [
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "donor": "G08",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "donor": "G08",
+      "oxygen": "10%O2",
+      "mean_nM": 3.734731694009655,
+      "technical_n": 4,
+      "source_rows": [
+        66,
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "donor": "G08",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "donor": "G10",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "donor": "G10",
+      "oxygen": "10%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "donor": "G10",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "donor": "G11",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "donor": "G11",
+      "oxygen": "10%O2",
+      "mean_nM": 42.41602549274128,
+      "technical_n": 4,
+      "source_rows": [
+        90,
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "donor": "G11",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "donor": "G14",
+      "oxygen": "0%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "donor": "G14",
+      "oxygen": "10%O2",
+      "mean_nM": 16.57796979209615,
+      "technical_n": 4,
+      "source_rows": [
+        98,
+        99,
+        100,
+        101
+      ]
+    },
+    {
+      "donor": "G14",
+      "oxygen": "21%O2",
+      "mean_nM": 0.0,
+      "technical_n": 4,
+      "source_rows": [
+        102,
+        103,
+        104,
+        105
+      ]
+    }
+  ],
+  "human_complete_sensitivity": [
+    {
+      "condition": "10%O2",
+      "donor_ids": [
+        "G01",
+        "G02",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G10",
+        "G11",
+        "G14"
+      ],
+      "n_a": 9,
+      "n_b": 9,
+      "paired": true,
+      "mean_a": 22.71199107662069,
+      "mean_b": 2.980698687142039,
+      "median_a": 3.734731694009655,
+      "median_b": 0.0,
+      "mean_difference": 19.731292389478654,
+      "difference_ci95": [
+        -1.2003605457015327,
+        50.100152263799984
+      ],
+      "mean_ratio": 7.61968701318061,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.1875,
+      "permutation_method": "exact paired sign-flip",
+      "n_bootstrap": 20000,
+      "p_holm": 0.375,
+      "multiplicity_family": "S23: complete-replicate sensitivity",
+      "family_size": 2
+    },
+    {
+      "condition": "21%O2",
+      "donor_ids": [
+        "G01",
+        "G02",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G10",
+        "G11",
+        "G14"
+      ],
+      "n_a": 9,
+      "n_b": 9,
+      "paired": true,
+      "mean_a": 6.755869281329098,
+      "mean_b": 2.980698687142039,
+      "median_a": 0.0,
+      "median_b": 0.0,
+      "mean_difference": 3.7751705941870592,
+      "difference_ci95": [
+        -5.444678176647687,
+        16.770189959208867
+      ],
+      "mean_ratio": 2.266538818724672,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 1.0,
+      "permutation_method": "exact paired sign-flip",
+      "n_bootstrap": 20000,
+      "p_holm": 1.0,
+      "multiplicity_family": "S23: complete-replicate sensitivity",
+      "family_size": 2
+    }
+  ],
+  "urine": [
+    {
+      "Length": "12wk",
+      "Batch": "Neg_12wk_0629",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "nmol/24 h",
+      "n_a": 4,
+      "n_b": 5,
+      "paired": false,
+      "mean_a": 258.6200071364568,
+      "mean_b": 30.324344616963053,
+      "median_a": 257.6482294302325,
+      "median_b": 18.4471688372093,
+      "mean_difference": 228.29566251949376,
+      "difference_ci95": [
+        47.250726628932995,
+        410.3782945376196
+      ],
+      "mean_ratio": 8.528461551376385,
+      "ratio_ci95": [
+        2.2816054736599396,
+        33.803338389965774
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.031746031746031744,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "1",
+          "value": 366.075822708618,
+          "source_rows": [
+            48
+          ]
+        },
+        {
+          "id": "2",
+          "value": 28.4245408207934,
+          "source_rows": [
+            52
+          ]
+        },
+        {
+          "id": "3",
+          "value": 149.220636151847,
+          "source_rows": [
+            56
+          ]
+        },
+        {
+          "id": "4",
+          "value": 490.759028864569,
+          "source_rows": [
+            60
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "1",
+          "value": 18.4471688372093,
+          "source_rows": [
+            24
+          ]
+        },
+        {
+          "id": "2",
+          "value": 23.7074394322845,
+          "source_rows": [
+            28
+          ]
+        },
+        {
+          "id": "3",
+          "value": 6.87634555403557,
+          "source_rows": [
+            32
+          ]
+        },
+        {
+          "id": "4",
+          "value": 96.0440158139535,
+          "source_rows": [
+            36
+          ]
+        },
+        {
+          "id": "5",
+          "value": 6.54675344733242,
+          "source_rows": [
+            40
+          ]
+        }
+      ],
+      "p_holm": 0.15873015873015872,
+      "multiplicity_family": "S5: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "3wk",
+      "Batch": "3wk_1213",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "nmol/24 h",
+      "n_a": 5,
+      "n_b": 5,
+      "paired": false,
+      "mean_a": 108.95542006563865,
+      "mean_b": 174.0849176692545,
+      "median_a": 131.377615241974,
+      "median_b": 172.202710575065,
+      "mean_difference": -65.12949760361586,
+      "difference_ci95": [
+        -149.7995543689171,
+        22.748388631179512
+      ],
+      "mean_ratio": 0.6258751276353763,
+      "ratio_ci95": [
+        0.29919096550548674,
+        1.21248421067054
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.23809523809523808,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "1",
+          "value": 146.558985516234,
+          "source_rows": [
+            45
+          ]
+        },
+        {
+          "id": "2",
+          "value": 77.4232069647829,
+          "source_rows": [
+            49
+          ]
+        },
+        {
+          "id": "3",
+          "value": 176.422890171825,
+          "source_rows": [
+            53
+          ]
+        },
+        {
+          "id": "4",
+          "value": 131.377615241974,
+          "source_rows": [
+            57
+          ]
+        },
+        {
+          "id": "5",
+          "value": 12.9944024333773,
+          "source_rows": [
+            61
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "1",
+          "value": 172.202710575065,
+          "source_rows": [
+            21
+          ]
+        },
+        {
+          "id": "2",
+          "value": 34.9670436928776,
+          "source_rows": [
+            25
+          ]
+        },
+        {
+          "id": "3",
+          "value": 152.315920511899,
+          "source_rows": [
+            29
+          ]
+        },
+        {
+          "id": "4",
+          "value": 246.125017611343,
+          "source_rows": [
+            33
+          ]
+        },
+        {
+          "id": "5",
+          "value": 264.813895955088,
+          "source_rows": [
+            37
+          ]
+        }
+      ],
+      "p_holm": 0.23809523809523808,
+      "multiplicity_family": "S5: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "3wk",
+      "Batch": "Neg_12wk_0629",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "nmol/24 h",
+      "n_a": 4,
+      "n_b": 5,
+      "paired": false,
+      "mean_a": 189.9390669801643,
+      "mean_b": 55.80128952120384,
+      "median_a": 205.07451002052,
+      "median_b": 38.5565663474692,
+      "mean_difference": 134.13777745896047,
+      "difference_ci95": [
+        48.55125817031464,
+        207.78876338235315
+      ],
+      "mean_ratio": 3.4038472696583413,
+      "ratio_ci95": [
+        1.6294237376758187,
+        7.261758289726873
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.031746031746031744,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "1",
+          "value": 193.797179001368,
+          "source_rows": [
+            46
+          ]
+        },
+        {
+          "id": "2",
+          "value": 74.5376705882353,
+          "source_rows": [
+            50
+          ]
+        },
+        {
+          "id": "3",
+          "value": 275.069577291382,
+          "source_rows": [
+            54
+          ]
+        },
+        {
+          "id": "4",
+          "value": 216.351841039672,
+          "source_rows": [
+            58
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "1",
+          "value": 24.4064653898769,
+          "source_rows": [
+            22
+          ]
+        },
+        {
+          "id": "2",
+          "value": 40.9562065663475,
+          "source_rows": [
+            26
+          ]
+        },
+        {
+          "id": "3",
+          "value": 38.5565663474692,
+          "source_rows": [
+            30
+          ]
+        },
+        {
+          "id": "4",
+          "value": 33.0906976744186,
+          "source_rows": [
+            34
+          ]
+        },
+        {
+          "id": "5",
+          "value": 141.996511627907,
+          "source_rows": [
+            38
+          ]
+        }
+      ],
+      "p_holm": 0.15873015873015872,
+      "multiplicity_family": "S5: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "6wk",
+      "Batch": "Neg_12wk_0629",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "nmol/24 h",
+      "n_a": 4,
+      "n_b": 5,
+      "paired": false,
+      "mean_a": 56.79386061422708,
+      "mean_b": 9.653706819972657,
+      "median_a": 60.55896481600545,
+      "median_b": 6.72916874145007,
+      "mean_difference": 47.140153794254424,
+      "difference_ci95": [
+        11.88798428782485,
+        81.40541766606701
+      ],
+      "mean_ratio": 5.8831142972692785,
+      "ratio_ci95": [
+        1.996357438597558,
+        19.947374783121436
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.047619047619047616,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "1",
+          "value": 98.02834925171,
+          "source_rows": [
+            47
+          ]
+        },
+        {
+          "id": "2",
+          "value": 8.02916357318741,
+          "source_rows": [
+            51
+          ]
+        },
+        {
+          "id": "3",
+          "value": 81.5082340095759,
+          "source_rows": [
+            55
+          ]
+        },
+        {
+          "id": "4",
+          "value": 39.609695622435,
+          "source_rows": [
+            59
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "1",
+          "value": 6.72916874145007,
+          "source_rows": [
+            23
+          ]
+        },
+        {
+          "id": "2",
+          "value": 1.36255234473324,
+          "source_rows": [
+            27
+          ]
+        },
+        {
+          "id": "3",
+          "value": 2.47533847879617,
+          "source_rows": [
+            31
+          ]
+        },
+        {
+          "id": "4",
+          "value": 14.2954720177839,
+          "source_rows": [
+            35
+          ]
+        },
+        {
+          "id": "5",
+          "value": 23.4060025170999,
+          "source_rows": [
+            39
+          ]
+        }
+      ],
+      "p_holm": 0.15873015873015872,
+      "multiplicity_family": "S5: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "7wk",
+      "Batch": "Neg_7wk_0211",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "nmol/24 h",
+      "n_a": 5,
+      "n_b": 4,
+      "paired": false,
+      "mean_a": 755.9019504573287,
+      "mean_b": 109.02130406694681,
+      "median_a": 532.68385752,
+      "median_b": 96.21758651122164,
+      "mean_difference": 646.8806463903818,
+      "difference_ci95": [
+        220.74826835408064,
+        1146.380114754678
+      ],
+      "mean_ratio": 6.933525120862169,
+      "ratio_ci95": [
+        2.812010910515601,
+        12.929574337064727
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.047619047619047616,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "UR _ 10",
+          "value": 935.240620688096,
+          "source_rows": [
+            62
+          ]
+        },
+        {
+          "id": "UR _ 6",
+          "value": 513.736012701208,
+          "source_rows": [
+            63
+          ]
+        },
+        {
+          "id": "UR _ 7",
+          "value": 87.9632721648197,
+          "source_rows": [
+            64
+          ]
+        },
+        {
+          "id": "UR _ 8",
+          "value": 1709.88598921252,
+          "source_rows": [
+            65
+          ]
+        },
+        {
+          "id": "UR _ 9",
+          "value": 532.68385752,
+          "source_rows": [
+            66
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "UR _ 10",
+          "value": 81.4533191229293,
+          "source_rows": [
+            41
+          ]
+        },
+        {
+          "id": "UR _ 6",
+          "value": 110.981853899514,
+          "source_rows": [
+            42
+          ]
+        },
+        {
+          "id": "UR _ 7",
+          "value": 165.559296403749,
+          "source_rows": [
+            43
+          ]
+        },
+        {
+          "id": "UR _ 9",
+          "value": 78.090746841595,
+          "source_rows": [
+            44
+          ]
+        }
+      ],
+      "p_holm": 0.15873015873015872,
+      "multiplicity_family": "S5: all week/batch strata",
+      "family_size": 5
+    }
+  ],
+  "bladder": [
+    {
+      "Length": "12wk",
+      "Batch": "Neg_12wk_02",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "source-table nM",
+      "n_a": 11,
+      "n_b": 11,
+      "paired": false,
+      "mean_a": 3977.441015722483,
+      "mean_b": 413.2904292170524,
+      "median_a": 1714.28610012957,
+      "median_b": 208.951943676236,
+      "mean_difference": 3564.1505865054305,
+      "difference_ci95": [
+        833.5582176160323,
+        7282.862164666783
+      ],
+      "mean_ratio": 9.623840124382859,
+      "ratio_ci95": [
+        2.4735889909696342,
+        42.04832676323655
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.00995980080398392,
+      "permutation_method": "Monte Carlo independent-label (50000)",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "Batch1R1",
+          "value": 5923.20068508148,
+          "source_rows": [
+            121
+          ]
+        },
+        {
+          "id": "Batch1R2",
+          "value": 401.26048033806,
+          "source_rows": [
+            123
+          ]
+        },
+        {
+          "id": "Batch1R3",
+          "value": 7831.12391906167,
+          "source_rows": [
+            125
+          ]
+        },
+        {
+          "id": "Batch1R4",
+          "value": 98.2130513994888,
+          "source_rows": [
+            127
+          ]
+        },
+        {
+          "id": "Batch1R5",
+          "value": 2266.17902379656,
+          "source_rows": [
+            129
+          ]
+        },
+        {
+          "id": "Batch2R1",
+          "value": 1714.28610012957,
+          "source_rows": [
+            131
+          ]
+        },
+        {
+          "id": "Batch2R2",
+          "value": 139.846000123849,
+          "source_rows": [
+            133
+          ]
+        },
+        {
+          "id": "Batch2R3",
+          "value": 1020.64666281597,
+          "source_rows": [
+            135
+          ]
+        },
+        {
+          "id": "Batch2R4",
+          "value": 452.290330985912,
+          "source_rows": [
+            137
+          ]
+        },
+        {
+          "id": "Batch2R5",
+          "value": 4014.48264674395,
+          "source_rows": [
+            139
+          ]
+        },
+        {
+          "id": "Batch2R6",
+          "value": 19890.3222724708,
+          "source_rows": [
+            141
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "Batch1R1",
+          "value": 151.448390761971,
+          "source_rows": [
+            83
+          ]
+        },
+        {
+          "id": "Batch1R2",
+          "value": 0.0,
+          "source_rows": [
+            85
+          ]
+        },
+        {
+          "id": "Batch1R3",
+          "value": 37.2821310077258,
+          "source_rows": [
+            87
+          ]
+        },
+        {
+          "id": "Batch1R4",
+          "value": 0.0,
+          "source_rows": [
+            89
+          ]
+        },
+        {
+          "id": "Batch1R5",
+          "value": 2359.41911040126,
+          "source_rows": [
+            91
+          ]
+        },
+        {
+          "id": "Batch2R1",
+          "value": 863.323341004295,
+          "source_rows": [
+            94
+          ]
+        },
+        {
+          "id": "Batch2R2",
+          "value": 0.0,
+          "source_rows": [
+            96
+          ]
+        },
+        {
+          "id": "Batch2R3",
+          "value": 227.791917829786,
+          "source_rows": [
+            98
+          ]
+        },
+        {
+          "id": "Batch2R4",
+          "value": 208.951943676236,
+          "source_rows": [
+            100
+          ]
+        },
+        {
+          "id": "Batch2R5",
+          "value": 229.22406398445,
+          "source_rows": [
+            102
+          ]
+        },
+        {
+          "id": "Batch2R6",
+          "value": 468.753822721853,
+          "source_rows": [
+            104
+          ]
+        }
+      ],
+      "p_holm": 0.0497990040199196,
+      "multiplicity_family": "S4: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "12wk",
+      "Batch": "Neg_12wk_0629",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "source-table nM",
+      "n_a": 4,
+      "n_b": 5,
+      "paired": false,
+      "mean_a": 122.8695592344649,
+      "mean_b": 150.9949472236494,
+      "median_a": 120.1036390345285,
+      "median_b": 92.7933746026435,
+      "mean_difference": -28.125387989184503,
+      "difference_ci95": [
+        -123.99195070539696,
+        62.31746065422865
+      ],
+      "mean_ratio": 0.8137329195027567,
+      "ratio_ci95": [
+        0.4242513434937526,
+        1.7250720795773935
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.6666666666666666,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "1",
+          "value": 121.525695734733,
+          "source_rows": [
+            107
+          ]
+        },
+        {
+          "id": "2",
+          "value": 118.681582334324,
+          "source_rows": [
+            109
+          ]
+        },
+        {
+          "id": "3",
+          "value": 197.996997097194,
+          "source_rows": [
+            111
+          ]
+        },
+        {
+          "id": "4",
+          "value": 53.2739617716086,
+          "source_rows": [
+            113
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "1",
+          "value": 82.3046680284092,
+          "source_rows": [
+            69
+          ]
+        },
+        {
+          "id": "2",
+          "value": 92.7933746026435,
+          "source_rows": [
+            71
+          ]
+        },
+        {
+          "id": "3",
+          "value": 61.3443548621824,
+          "source_rows": [
+            73
+          ]
+        },
+        {
+          "id": "4",
+          "value": 296.387140902873,
+          "source_rows": [
+            75
+          ]
+        },
+        {
+          "id": "5",
+          "value": 222.145197722139,
+          "source_rows": [
+            77
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S4: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "3wk",
+      "Batch": "3wk_1213",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "source-table nM",
+      "n_a": 5,
+      "n_b": 5,
+      "paired": false,
+      "mean_a": 16443.494433605505,
+      "mean_b": 35984.965846984225,
+      "median_a": 15713.692902926,
+      "median_b": 6884.06773307972,
+      "mean_difference": -19541.47141337872,
+      "difference_ci95": [
+        -80650.45563299402,
+        19139.223561643947
+      ],
+      "mean_ratio": 0.45695456551290786,
+      "ratio_ci95": [
+        0.11564688649181601,
+        6.254303823629572
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.8809523809523809,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "1",
+          "value": 15713.692902926,
+          "source_rows": [
+            106
+          ]
+        },
+        {
+          "id": "2",
+          "value": 1720.64920864481,
+          "source_rows": [
+            108
+          ]
+        },
+        {
+          "id": "3",
+          "value": 37825.8611287412,
+          "source_rows": [
+            110
+          ]
+        },
+        {
+          "id": "4",
+          "value": 20599.1006311254,
+          "source_rows": [
+            112
+          ]
+        },
+        {
+          "id": "5",
+          "value": 6358.16829659011,
+          "source_rows": [
+            114
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "1",
+          "value": 3210.1863558202,
+          "source_rows": [
+            68
+          ]
+        },
+        {
+          "id": "2",
+          "value": 111.947855331236,
+          "source_rows": [
+            70
+          ]
+        },
+        {
+          "id": "3",
+          "value": 6884.06773307972,
+          "source_rows": [
+            72
+          ]
+        },
+        {
+          "id": "4",
+          "value": 153827.764479144,
+          "source_rows": [
+            74
+          ]
+        },
+        {
+          "id": "5",
+          "value": 15890.862811546,
+          "source_rows": [
+            76
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S4: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "3wk",
+      "Batch": "3wk_Nov",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "source-table nM",
+      "n_a": 12,
+      "n_b": 13,
+      "paired": false,
+      "mean_a": 2745.7557202918038,
+      "mean_b": 11090.519192973563,
+      "median_a": 407.31210546833097,
+      "median_b": 181.135467402985,
+      "mean_difference": -8344.76347268176,
+      "difference_ci95": [
+        -31919.719995930707,
+        5537.633511749655
+      ],
+      "mean_ratio": 0.24757684221234538,
+      "ratio_ci95": [
+        0.02196604931679975,
+        24.4062641631262
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.9787804243915121,
+      "permutation_method": "Monte Carlo independent-label (50000)",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "Batch1R1",
+          "value": 1405.5420037377,
+          "source_rows": [
+            120
+          ]
+        },
+        {
+          "id": "Batch1R2",
+          "value": 307.578088761905,
+          "source_rows": [
+            122
+          ]
+        },
+        {
+          "id": "Batch1R3",
+          "value": 88.942494013544,
+          "source_rows": [
+            124
+          ]
+        },
+        {
+          "id": "Batch1R4",
+          "value": 98.9002740477454,
+          "source_rows": [
+            126
+          ]
+        },
+        {
+          "id": "Batch1R5",
+          "value": 1097.19781871605,
+          "source_rows": [
+            128
+          ]
+        },
+        {
+          "id": "Batch2R1",
+          "value": 24059.7848562985,
+          "source_rows": [
+            130
+          ]
+        },
+        {
+          "id": "Batch2R2",
+          "value": 201.47448,
+          "source_rows": [
+            132
+          ]
+        },
+        {
+          "id": "Batch2R3",
+          "value": 507.046122174757,
+          "source_rows": [
+            134
+          ]
+        },
+        {
+          "id": "Batch2R4",
+          "value": 691.661796,
+          "source_rows": [
+            136
+          ]
+        },
+        {
+          "id": "Batch2R5",
+          "value": 4035.57264,
+          "source_rows": [
+            138
+          ]
+        },
+        {
+          "id": "Batch2R6",
+          "value": 195.521314751445,
+          "source_rows": [
+            140
+          ]
+        },
+        {
+          "id": "Batch2R7",
+          "value": 259.846755,
+          "source_rows": [
+            142
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "Batch1R1",
+          "value": 170.585086909091,
+          "source_rows": [
+            82
+          ]
+        },
+        {
+          "id": "Batch1R2",
+          "value": 68.8424376585366,
+          "source_rows": [
+            84
+          ]
+        },
+        {
+          "id": "Batch1R3",
+          "value": 587.892892593968,
+          "source_rows": [
+            86
+          ]
+        },
+        {
+          "id": "Batch1R4",
+          "value": 88.7107756853933,
+          "source_rows": [
+            88
+          ]
+        },
+        {
+          "id": "Batch1R5",
+          "value": 136.710870645669,
+          "source_rows": [
+            90
+          ]
+        },
+        {
+          "id": "Batch1R6",
+          "value": 193.218325306931,
+          "source_rows": [
+            92
+          ]
+        },
+        {
+          "id": "Batch2R1",
+          "value": 133.378960067797,
+          "source_rows": [
+            93
+          ]
+        },
+        {
+          "id": "Batch2R2",
+          "value": 141027.457925455,
+          "source_rows": [
+            95
+          ]
+        },
+        {
+          "id": "Batch2R3",
+          "value": 741.561509484163,
+          "source_rows": [
+            97
+          ]
+        },
+        {
+          "id": "Batch2R4",
+          "value": 112.768565446809,
+          "source_rows": [
+            99
+          ]
+        },
+        {
+          "id": "Batch2R5",
+          "value": 181.135467402985,
+          "source_rows": [
+            101
+          ]
+        },
+        {
+          "id": "Batch2R6",
+          "value": 209.72458,
+          "source_rows": [
+            103
+          ]
+        },
+        {
+          "id": "Batch2R7",
+          "value": 524.762112,
+          "source_rows": [
+            105
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S4: all week/batch strata",
+      "family_size": 5
+    },
+    {
+      "Length": "7wk",
+      "Batch": "Pos_7wk_0113",
+      "group_a": "BBN",
+      "group_b": "ABX/BBN",
+      "unit": "source-table nM",
+      "n_a": 5,
+      "n_b": 4,
+      "paired": false,
+      "mean_a": 675.0072678456661,
+      "mean_b": 177.13380346059026,
+      "median_a": 677.308040945892,
+      "median_b": 69.176240465231,
+      "mean_difference": 497.87346438507586,
+      "difference_ci95": [
+        193.0612203881574,
+        754.7939281685973
+      ],
+      "mean_ratio": 3.810719663092683,
+      "ratio_ci95": null,
+      "ratio_interval_status": "zero denominator in bootstrap; not estimated",
+      "p_value": 0.031746031746031744,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "10",
+          "value": 769.989073197629,
+          "source_rows": [
+            119
+          ]
+        },
+        {
+          "id": "6",
+          "value": 612.01089221559,
+          "source_rows": [
+            115
+          ]
+        },
+        {
+          "id": "7",
+          "value": 943.51063666922,
+          "source_rows": [
+            116
+          ]
+        },
+        {
+          "id": "8",
+          "value": 372.2176962,
+          "source_rows": [
+            117
+          ]
+        },
+        {
+          "id": "9",
+          "value": 677.308040945892,
+          "source_rows": [
+            118
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "10",
+          "value": 0.0,
+          "source_rows": [
+            81
+          ]
+        },
+        {
+          "id": "6",
+          "value": 570.182732911899,
+          "source_rows": [
+            78
+          ]
+        },
+        {
+          "id": "7",
+          "value": 0.0,
+          "source_rows": [
+            79
+          ]
+        },
+        {
+          "id": "9",
+          "value": 138.352480930462,
+          "source_rows": [
+            80
+          ]
+        }
+      ],
+      "p_holm": 0.12698412698412698,
+      "multiplicity_family": "S4: all week/batch strata",
+      "family_size": 5
+    }
+  ],
+  "germ_free_controls": [
+    {
+      "Tissue": "BLD",
+      "group_a": "GFA",
+      "group_b": "GF",
+      "unit": "source-table µM",
+      "n_a": 6,
+      "n_b": 6,
+      "paired": false,
+      "mean_a": 3.322267810208849,
+      "mean_b": 3.6006096890612542,
+      "median_a": 1.94509641260719,
+      "median_b": 2.408832671957675,
+      "mean_difference": -0.27834187885240524,
+      "difference_ci95": [
+        -3.539294148743398,
+        3.1435470261237137
+      ],
+      "mean_ratio": 0.922695903502672,
+      "ratio_ci95": [
+        0.2873794887264716,
+        2.5339897891687744
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.8874458874458875,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 1.44938822751323,
+          "source_rows": [
+            14
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 0.574066776135742,
+          "source_rows": [
+            15
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 2.44080459770115,
+          "source_rows": [
+            16
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 9.23508908786687,
+          "source_rows": [
+            17
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 0.827513216948121,
+          "source_rows": [
+            18
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 5.40674495508798,
+          "source_rows": [
+            19
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 1.4363458994709,
+          "source_rows": [
+            20
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 8.11445485498726,
+          "source_rows": [
+            21
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 6.4261779835391,
+          "source_rows": [
+            22
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.821046075837742,
+          "source_rows": [
+            23
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 1.42431387608807,
+          "source_rows": [
+            24
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 3.38131944444445,
+          "source_rows": [
+            25
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S15: all four eligible GF antibiotic controls",
+      "family_size": 4
+    },
+    {
+      "Tissue": "KID",
+      "group_a": "GFA",
+      "group_b": "GF",
+      "unit": "source-table µM",
+      "n_a": 6,
+      "n_b": 6,
+      "paired": false,
+      "mean_a": 17.735063656791564,
+      "mean_b": 23.015001965727908,
+      "median_a": 17.5051554888095,
+      "median_b": 9.66085372960373,
+      "mean_difference": -5.2799383089363445,
+      "difference_ci95": [
+        -28.256628963990956,
+        13.84209719436429
+      ],
+      "mean_ratio": 0.7705871015436451,
+      "ratio_ci95": [
+        0.2978981175199472,
+        2.675650157094892
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.7229437229437229,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 12.9591122868901,
+          "source_rows": [
+            38
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 4.26234544862961,
+          "source_rows": [
+            39
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 22.0511986907289,
+          "source_rows": [
+            40
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 25.0855229499928,
+          "source_rows": [
+            41
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 4.88084276406036,
+          "source_rows": [
+            42
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 37.1713598004476,
+          "source_rows": [
+            43
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 6.28951471870479,
+          "source_rows": [
+            44
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 35.9930177742678,
+          "source_rows": [
+            45
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 71.2616412103618,
+          "source_rows": [
+            46
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 5.22413063182562,
+          "source_rows": [
+            47
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 9.40523538961039,
+          "source_rows": [
+            48
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 9.91647206959707,
+          "source_rows": [
+            49
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S15: all four eligible GF antibiotic controls",
+      "family_size": 4
+    },
+    {
+      "Tissue": "LVR",
+      "group_a": "GFA",
+      "group_b": "GF",
+      "unit": "source-table µM",
+      "n_a": 6,
+      "n_b": 6,
+      "paired": false,
+      "mean_a": 24.087445622233727,
+      "mean_b": 26.658043050344173,
+      "median_a": 13.325557635760148,
+      "median_b": 15.845853890891405,
+      "mean_difference": -2.570597428110446,
+      "difference_ci95": [
+        -29.64804037616079,
+        27.32575893773547
+      ],
+      "mean_ratio": 0.9035714128281724,
+      "ratio_ci95": [
+        0.26942680013879367,
+        3.038760972063524
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.8961038961038961,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 12.817664181057,
+          "source_rows": [
+            26
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 5.843673739337,
+          "source_rows": [
+            27
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 21.1087096803553,
+          "source_rows": [
+            28
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 13.8334510904633,
+          "source_rows": [
+            29
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 7.45679958343205,
+          "source_rows": [
+            30
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 83.4643754587577,
+          "source_rows": [
+            31
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 6.6183801857413,
+          "source_rows": [
+            32
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 65.8581725254015,
+          "source_rows": [
+            33
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 49.6616483029382,
+          "source_rows": [
+            34
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 6.1183495062012,
+          "source_rows": [
+            35
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 7.64428786574871,
+          "source_rows": [
+            36
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 24.0474199160341,
+          "source_rows": [
+            37
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S15: all four eligible GF antibiotic controls",
+      "family_size": 4
+    },
+    {
+      "Tissue": "PL",
+      "group_a": "GFA",
+      "group_b": "GF",
+      "unit": "source-table µM",
+      "n_a": 6,
+      "n_b": 6,
+      "paired": false,
+      "mean_a": 5.891980820105823,
+      "mean_b": 6.974520502645497,
+      "median_a": 3.39141865079365,
+      "median_b": 2.7735615079365097,
+      "mean_difference": -1.0825396825396743,
+      "difference_ci95": [
+        -8.674941716269831,
+        6.80373325892858
+      ],
+      "mean_ratio": 0.8447865079572054,
+      "ratio_ci95": [
+        0.23398287002886858,
+        3.6061652561881794
+      ],
+      "ratio_interval_status": "estimable",
+      "p_value": 0.8679653679653679,
+      "permutation_method": "exact independent-label",
+      "n_bootstrap": 20000,
+      "observations_a": [
+        {
+          "id": "R1",
+          "value": 2.94672619047619,
+          "source_rows": [
+            2
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 1.38725198412698,
+          "source_rows": [
+            3
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 3.83611111111111,
+          "source_rows": [
+            4
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 6.17003968253968,
+          "source_rows": [
+            5
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 1.21056547619048,
+          "source_rows": [
+            6
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 19.8011904761905,
+          "source_rows": [
+            7
+          ]
+        }
+      ],
+      "observations_b": [
+        {
+          "id": "R1",
+          "value": 2.14077380952381,
+          "source_rows": [
+            8
+          ]
+        },
+        {
+          "id": "R2",
+          "value": 20.2692956349206,
+          "source_rows": [
+            9
+          ]
+        },
+        {
+          "id": "R3",
+          "value": 13.2548115079365,
+          "source_rows": [
+            10
+          ]
+        },
+        {
+          "id": "R4",
+          "value": 0.787400793650794,
+          "source_rows": [
+            11
+          ]
+        },
+        {
+          "id": "R5",
+          "value": 1.98849206349206,
+          "source_rows": [
+            12
+          ]
+        },
+        {
+          "id": "R6",
+          "value": 3.40634920634921,
+          "source_rows": [
+            13
+          ]
+        }
+      ],
+      "p_holm": 1.0,
+      "multiplicity_family": "S15: all four eligible GF antibiotic controls",
+      "family_size": 4
+    }
+  ],
+  "acute": {
+    "descriptive": [
+      {
+        "time_h": 1,
+        "tissue": "Cecum",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 19.36361285509568,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          96.8180642754784
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "time_h": 1,
+        "tissue": "Cecum",
+        "group": "BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 71.4693061666514,
+        "values_uM": [
+          116.19969033009801,
+          56.6711446175011,
+          61.7909843994552,
+          26.8481312317953,
+          95.8365802544074
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "source_rows": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "time_h": 1,
+        "tissue": "Liver",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 184.35029668270923,
+        "values_uM": [
+          197.778130379587,
+          170.694417362901,
+          31.5735354645431,
+          345.486367741897,
+          176.219032464618
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      {
+        "time_h": 1,
+        "tissue": "Liver",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 101.68041995511533,
+        "values_uM": [
+          225.03749838665,
+          102.853238044008,
+          25.1353593597593,
+          0.0,
+          65.6208828490096,
+          191.435541091265
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ]
+      },
+      {
+        "time_h": 1,
+        "tissue": "PL",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 135.4292286740774,
+        "values_uM": [
+          158.777463798027,
+          107.789454251695,
+          268.677174967408,
+          0.0,
+          141.90205035325698
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          97,
+          98,
+          99,
+          100,
+          101
+        ]
+      },
+      {
+        "time_h": 1,
+        "tissue": "PL",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 81.66478961506412,
+        "values_uM": [
+          230.01777632785098,
+          70.7726514347701,
+          13.0228712189009,
+          0.0,
+          46.0391108756587,
+          130.136327833204
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          91,
+          92,
+          93,
+          94,
+          95,
+          96
+        ]
+      },
+      {
+        "time_h": 3,
+        "tissue": "Cecum",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6"
+        ],
+        "source_rows": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "time_h": 3,
+        "tissue": "Cecum",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 57.47916459775835,
+        "values_uM": [
+          17.541820987449597,
+          97.9137653419489,
+          64.133021681746,
+          25.078746483892502,
+          18.6250378193371,
+          121.582595272176
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "time_h": 3,
+        "tissue": "Liver",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 16.550434954618282,
+        "values_uM": [
+          17.2625887931258,
+          59.6466980123111,
+          22.3933229222728,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6"
+        ],
+        "source_rows": [
+          63,
+          64,
+          65,
+          66,
+          67,
+          68
+        ]
+      },
+      {
+        "time_h": 3,
+        "tissue": "Liver",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 3.3255916492022,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          19.9535498952132,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          57,
+          58,
+          59,
+          60,
+          61,
+          62
+        ]
+      },
+      {
+        "time_h": 3,
+        "tissue": "PL",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 1.9117115917976335,
+        "values_uM": [
+          0.0,
+          11.470269550785801,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6"
+        ],
+        "source_rows": [
+          108,
+          109,
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      {
+        "time_h": 3,
+        "tissue": "PL",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ]
+      },
+      {
+        "time_h": 6,
+        "tissue": "Cecum",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      {
+        "time_h": 6,
+        "tissue": "Cecum",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 8.8837803590855,
+        "values_uM": [
+          0.0,
+          53.302682154513,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      {
+        "time_h": 6,
+        "tissue": "Liver",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          75,
+          76,
+          77,
+          78,
+          79
+        ]
+      },
+      {
+        "time_h": 6,
+        "tissue": "Liver",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74
+        ]
+      },
+      {
+        "time_h": 6,
+        "tissue": "PL",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          120,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      {
+        "time_h": 6,
+        "tissue": "PL",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ]
+      },
+      {
+        "time_h": 9,
+        "tissue": "Cecum",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      },
+      {
+        "time_h": 9,
+        "tissue": "Cecum",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      },
+      {
+        "time_h": 9,
+        "tissue": "Liver",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          86,
+          87,
+          88,
+          89,
+          90
+        ]
+      },
+      {
+        "time_h": 9,
+        "tissue": "Liver",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85
+        ]
+      },
+      {
+        "time_h": 9,
+        "tissue": "PL",
+        "group": "ABX/BBN",
+        "n_recorded_ids": 5,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5"
+        ],
+        "source_rows": [
+          131,
+          132,
+          133,
+          134,
+          135
+        ]
+      },
+      {
+        "time_h": 9,
+        "tissue": "PL",
+        "group": "BBN",
+        "n_recorded_ids": 6,
+        "mean_uM": 0.0,
+        "values_uM": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ids": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "source_rows": [
+          125,
+          126,
+          127,
+          128,
+          129,
+          130
+        ]
+      }
+    ],
+    "published_contrasts": [
+      {
+        "time_h": 1,
+        "tissue": "PL",
+        "published_abx_minus_bbn_nM": 53764.4389940103,
+        "raw_abx_minus_bbn_nM": 53764.43905901325,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -6851.86369672152,
+          114380.741684742
+        ],
+        "published_p_adjusted": 0.076343751651108,
+        "source_row": 2
+      },
+      {
+        "time_h": 3,
+        "tissue": "PL",
+        "published_abx_minus_bbn_nM": 1911.7115916667,
+        "raw_abx_minus_bbn_nM": 1911.7115917976334,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -55883.6653223332,
+          59707.0885056666
+        ],
+        "published_p_adjusted": 0.942701946492148,
+        "source_row": 3
+      },
+      {
+        "time_h": 6,
+        "tissue": "PL",
+        "published_abx_minus_bbn_nM": -0.000100989709608257,
+        "raw_abx_minus_bbn_nM": 0.0,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -60616.3027917215,
+          60616.3025897421
+        ],
+        "published_p_adjusted": 0.999999997111113,
+        "source_row": 4
+      },
+      {
+        "time_h": 9,
+        "tissue": "PL",
+        "published_abx_minus_bbn_nM": -0.00010098973143613,
+        "raw_abx_minus_bbn_nM": 0.0,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -60616.3027917216,
+          60616.3025897421
+        ],
+        "published_p_adjusted": 0.999999997111113,
+        "source_row": 5
+      },
+      {
+        "time_h": 1,
+        "tissue": "Liver",
+        "published_abx_minus_bbn_nM": 82669.8766712233,
+        "raw_abx_minus_bbn_nM": 82669.87672759387,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          14825.4197005222,
+          150514.333641925
+        ],
+        "published_p_adjusted": 0.0217449218474531,
+        "source_row": 18
+      },
+      {
+        "time_h": 3,
+        "tissue": "Liver",
+        "published_abx_minus_bbn_nM": 13224.8433033334,
+        "raw_abx_minus_bbn_nM": 13224.843305416081,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -51462.3083059125,
+          77911.9949125793
+        ],
+        "published_p_adjusted": 0.658460682883482,
+        "source_row": 19
+      },
+      {
+        "time_h": 6,
+        "tissue": "Liver",
+        "published_abx_minus_bbn_nM": -6.91099558025599e-05,
+        "raw_abx_minus_bbn_nM": 0.0,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -67844.4570398111,
+          67844.4569015912
+        ],
+        "published_p_adjusted": 0.999999998233681,
+        "source_row": 20
+      },
+      {
+        "time_h": 9,
+        "tissue": "Liver",
+        "published_abx_minus_bbn_nM": -6.91099558025599e-05,
+        "raw_abx_minus_bbn_nM": 0.0,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -67844.4570398111,
+          67844.4569015912
+        ],
+        "published_p_adjusted": 0.999999998233681,
+        "source_row": 21
+      },
+      {
+        "time_h": 1,
+        "tissue": "Cecum",
+        "published_abx_minus_bbn_nM": -51652.9400109471,
+        "raw_abx_minus_bbn_nM": -52105.69331155572,
+        "agreement_within_1nM": false,
+        "published_ci95_nM": [
+          -88551.804140513,
+          -14754.0758813811
+        ],
+        "published_p_adjusted": 0.0108913125792948,
+        "source_row": 34
+      },
+      {
+        "time_h": 3,
+        "tissue": "Cecum",
+        "published_abx_minus_bbn_nM": -57479.1646016667,
+        "raw_abx_minus_bbn_nM": -57479.16459775835,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -91177.3865226481,
+          -23780.9426806853
+        ],
+        "published_p_adjusted": 0.00348270497643723,
+        "source_row": 35
+      },
+      {
+        "time_h": 6,
+        "tissue": "Cecum",
+        "published_abx_minus_bbn_nM": -8883.78035833334,
+        "raw_abx_minus_bbn_nM": -8883.7803590855,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -44222.3641199694,
+          26454.8034033027
+        ],
+        "published_p_adjusted": 0.587716510363466,
+        "source_row": 36
+      },
+      {
+        "time_h": 9,
+        "tissue": "Cecum",
+        "published_abx_minus_bbn_nM": -1.45519152283669e-11,
+        "raw_abx_minus_bbn_nM": 0.0,
+        "agreement_within_1nM": true,
+        "published_ci95_nM": [
+          -35338.583761636,
+          35338.583761636
+        ],
+        "published_p_adjusted": 0.999999999999999,
+        "source_row": 37
+      }
+    ],
+    "treatment_mapping": "A-prefixed ID interpreted as ABX/BBN; corroborated by 11/12 labelled source contrasts within 1 nM, not by an explicit raw group field",
+    "resampling_unit": "terminal animal ID within time and inferred treatment; no longitudinal pairing",
+    "limitations": [
+      "Methods report five animals/time/group; the table contains five or six IDs per cell.",
+      "Article text reports P=0.085 for the 1-h caecal comparison; S18 reports adjusted P=0.0108913, and its estimate differs slightly from raw mean difference.",
+      "All first samples are at 1 h; concentrations in both compartments already present do not establish which source generated BCPN first.",
+      "Reported zero values may be below detection; no assay LOD is supplied in this derived table."
+    ],
+    "use": "Descriptive temporal comparison only; excluded from kinetic calibration and new significance testing pending source reconciliation."
+  },
+  "isolate_signals": [
+    {
+      "strain": "Akkermansia muciniphila",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "strain": "Akkermansia muciniphila",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        134,
+        135,
+        136,
+        137
+      ]
+    },
+    {
+      "strain": "Akkermansia muciniphila",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        130,
+        131,
+        132,
+        133
+      ]
+    },
+    {
+      "strain": "Bacteroides thetaiotaomicron",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        186,
+        187,
+        188,
+        189
+      ]
+    },
+    {
+      "strain": "Bacteroides thetaiotaomicron",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        182,
+        183,
+        184,
+        185
+      ]
+    },
+    {
+      "strain": "Bacteroides thetaiotaomicron",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        178,
+        179,
+        180,
+        181
+      ]
+    },
+    {
+      "strain": "Bacteroides uniformis",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        198,
+        199,
+        200,
+        201
+      ]
+    },
+    {
+      "strain": "Bacteroides uniformis",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        194,
+        195,
+        196,
+        197
+      ]
+    },
+    {
+      "strain": "Bacteroides uniformis",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        190,
+        191,
+        192,
+        193
+      ]
+    },
+    {
+      "strain": "Bacteroides vulgatus",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        210,
+        211,
+        212,
+        213
+      ]
+    },
+    {
+      "strain": "Bacteroides vulgatus",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        206,
+        207,
+        208,
+        209
+      ]
+    },
+    {
+      "strain": "Bacteroides vulgatus",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        202,
+        203,
+        204,
+        205
+      ]
+    },
+    {
+      "strain": "Clostridium ramosum",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        222,
+        223,
+        224,
+        225
+      ]
+    },
+    {
+      "strain": "Clostridium ramosum",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        218,
+        219,
+        220,
+        221
+      ]
+    },
+    {
+      "strain": "Clostridium ramosum",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        214,
+        215,
+        216,
+        217
+      ]
+    },
+    {
+      "strain": "Clostridium scindens",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        162,
+        163,
+        164,
+        165
+      ]
+    },
+    {
+      "strain": "Clostridium scindens",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        158,
+        159,
+        160,
+        161
+      ]
+    },
+    {
+      "strain": "Clostridium scindens",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        154,
+        155,
+        156,
+        157
+      ]
+    },
+    {
+      "strain": "Collinsella aerofaciens",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        150,
+        151,
+        152,
+        153
+      ]
+    },
+    {
+      "strain": "Collinsella aerofaciens",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        146,
+        147,
+        148,
+        149
+      ]
+    },
+    {
+      "strain": "Collinsella aerofaciens",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "strain": "Coprococcus comes",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "strain": "Coprococcus comes",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        242,
+        243,
+        244,
+        245
+      ]
+    },
+    {
+      "strain": "Coprococcus comes",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        238,
+        239,
+        240,
+        241
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        108,
+        109,
+        110,
+        111
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        96,
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "10%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "10%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "10%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "21%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "21%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "strain": "Enterococcus faecalis",
+      "oxygen": "21%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        100,
+        101,
+        102,
+        103
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        88,
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "10%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "10%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "10%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "21%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "21%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "strain": "Escherichia coli ED1a",
+      "oxygen": "21%O2",
+      "time_h": 12,
+      "technical_n": 3,
+      "mean_signal": 27428.333333333332,
+      "signals": [
+        49326.0,
+        14438.0,
+        18521.0
+      ],
+      "source_rows": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "strain": "Flavonifractor plautii",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "strain": "Flavonifractor plautii",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        250,
+        251,
+        252,
+        253
+      ]
+    },
+    {
+      "strain": "Flavonifractor plautii",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        246,
+        247,
+        248,
+        249
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        306,
+        307,
+        308,
+        309,
+        318,
+        319,
+        320,
+        321
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        302,
+        303,
+        304,
+        305
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        298,
+        299,
+        300,
+        301,
+        314,
+        315,
+        316,
+        317
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "0%O2",
+      "time_h": 24,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        310,
+        311,
+        312,
+        313
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "10%O2",
+      "time_h": 0,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        330,
+        331,
+        332,
+        333,
+        342,
+        343,
+        344,
+        345
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "10%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        326,
+        327,
+        328,
+        329
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "10%O2",
+      "time_h": 12,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        322,
+        323,
+        324,
+        325,
+        338,
+        339,
+        340,
+        341
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "10%O2",
+      "time_h": 24,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        334,
+        335,
+        336,
+        337
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "21%O2",
+      "time_h": 0,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        354,
+        355,
+        356,
+        357,
+        366,
+        367,
+        368,
+        369
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "21%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        350,
+        351,
+        352,
+        353
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "21%O2",
+      "time_h": 12,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        346,
+        347,
+        348,
+        349,
+        362,
+        363,
+        364,
+        365
+      ]
+    },
+    {
+      "strain": "Lactobacillus reuteri",
+      "oxygen": "21%O2",
+      "time_h": 24,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        358,
+        359,
+        360,
+        361
+      ]
+    },
+    {
+      "strain": "NoBac",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        294,
+        295,
+        296,
+        297
+      ]
+    },
+    {
+      "strain": "NoBac",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        286,
+        287,
+        288,
+        289
+      ]
+    },
+    {
+      "strain": "NoBac",
+      "oxygen": "0%O2",
+      "time_h": 24,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        290,
+        291,
+        292,
+        293
+      ]
+    },
+    {
+      "strain": "NoBac0621",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        174,
+        175,
+        176,
+        177
+      ]
+    },
+    {
+      "strain": "NoBac0621",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        170,
+        171,
+        172,
+        173
+      ]
+    },
+    {
+      "strain": "NoBac0621",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        166,
+        167,
+        168,
+        169
+      ]
+    },
+    {
+      "strain": "NoBac0625",
+      "oxygen": "10%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        126,
+        127,
+        128,
+        129
+      ]
+    },
+    {
+      "strain": "NoBac0625",
+      "oxygen": "10%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        122,
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "strain": "NoBac0625",
+      "oxygen": "10%O2",
+      "time_h": 12,
+      "technical_n": 3,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "strain": "Parabacteroides merdae",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        234,
+        235,
+        236,
+        237
+      ]
+    },
+    {
+      "strain": "Parabacteroides merdae",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        230,
+        231,
+        232,
+        233
+      ]
+    },
+    {
+      "strain": "Parabacteroides merdae",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        226,
+        227,
+        228,
+        229
+      ]
+    },
+    {
+      "strain": "Ruminococcus gnavus",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        270,
+        271,
+        272,
+        273,
+        282,
+        283,
+        284,
+        285
+      ]
+    },
+    {
+      "strain": "Ruminococcus gnavus",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        266,
+        267,
+        268,
+        269
+      ]
+    },
+    {
+      "strain": "Ruminococcus gnavus",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 8,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        262,
+        263,
+        264,
+        265,
+        274,
+        275,
+        276,
+        277
+      ]
+    },
+    {
+      "strain": "Ruminococcus gnavus",
+      "oxygen": "0%O2",
+      "time_h": 24,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        278,
+        279,
+        280,
+        281
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 3,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        116,
+        117,
+        118
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        104,
+        105,
+        106,
+        107
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        92,
+        93,
+        94,
+        95
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "10%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "10%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "10%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "21%O2",
+      "time_h": 0,
+      "technical_n": 3,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "21%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        69,
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "strain": "Streptococcus salivarius",
+      "oxygen": "21%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "strain": "Veillonella parvula",
+      "oxygen": "0%O2",
+      "time_h": 0,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "strain": "Veillonella parvula",
+      "oxygen": "0%O2",
+      "time_h": 4,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        258,
+        259,
+        260,
+        261
+      ]
+    },
+    {
+      "strain": "Veillonella parvula",
+      "oxygen": "0%O2",
+      "time_h": 12,
+      "technical_n": 4,
+      "mean_signal": 0.0,
+      "signals": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_rows": [
+        254,
+        255,
+        256,
+        257
+      ]
+    }
+  ],
+  "published_consortium_contrasts": [
+    {
+      "source_row": 38,
+      "Tissue_or_Group": "CEC1",
+      "term": "Group",
+      ".y.": "BCPN",
+      "group1": "2Mem",
+      "group2": "3Mem",
+      "null.value": 0,
+      "estimate": -2.3946544680488,
+      "se": 0.787356341057814,
+      "df": 77,
+      "conf.low": -3.96248124291709,
+      "conf.high": -0.826827693180513,
+      "statistic": -3.04138589248114,
+      "p": 0.00321851482010214,
+      "p.adj": 0.00321851482010214,
+      "p.adj.signif": "**"
+    },
+    {
+      "source_row": 39,
+      "Tissue_or_Group": "COL",
+      "term": "Group",
+      ".y.": "BCPN",
+      "group1": "2Mem",
+      "group2": "3Mem",
+      "null.value": 0,
+      "estimate": -1.24556405792104,
+      "se": 0.787356341057815,
+      "df": 77,
+      "conf.low": -2.81339083278933,
+      "conf.high": 0.322262716947248,
+      "statistic": -1.58195723202994,
+      "p": 0.117758482300237,
+      "p.adj": 0.117758482300237,
+      "p.adj.signif": "ns"
+    },
+    {
+      "source_row": 40,
+      "Tissue_or_Group": "REC",
+      "term": "Group",
+      ".y.": "BCPN",
+      "group1": "2Mem",
+      "group2": "3Mem",
+      "null.value": 0,
+      "estimate": -1.22152797164716,
+      "se": 0.787356341057815,
+      "df": 77,
+      "conf.low": -2.78935474651545,
+      "conf.high": 0.346298803221128,
+      "statistic": -1.55142964874841,
+      "p": 0.124899458987897,
+      "p.adj": 0.124899458987897,
+      "p.adj.signif": "ns"
+    },
+    {
+      "source_row": 41,
+      "Tissue_or_Group": "SI1",
+      "term": "Group",
+      ".y.": "BCPN",
+      "group1": "2Mem",
+      "group2": "3Mem",
+      "null.value": 0,
+      "estimate": 0.718676294659605,
+      "se": 0.787356341057815,
+      "df": 77,
+      "conf.low": -0.849150480208685,
+      "conf.high": 2.2865030695279,
+      "statistic": 0.912771330061383,
+      "p": 0.364211920455142,
+      "p.adj": 0.364211920455142,
+      "p.adj.signif": "ns"
+    },
+    {
+      "source_row": 42,
+      "Tissue_or_Group": "SI2",
+      "term": "Group",
+      ".y.": "BCPN",
+      "group1": "2Mem",
+      "group2": "3Mem",
+      "null.value": 0,
+      "estimate": -0.262266051314991,
+      "se": 0.787356341057815,
+      "df": 77,
+      "conf.low": -1.83009282618328,
+      "conf.high": 1.3055607235533,
+      "statistic": -0.333097020546803,
+      "p": 0.739966327035357,
+      "p.adj": 0.739966327035357,
+      "p.adj.signif": "ns"
+    },
+    {
+      "source_row": 43,
+      "Tissue_or_Group": "SI3",
+      "term": "Group",
+      ".y.": "BCPN",
+      "group1": "2Mem",
+      "group2": "3Mem",
+      "null.value": 0,
+      "estimate": 0.185066074404761,
+      "se": 0.787356341057815,
+      "df": 77,
+      "conf.low": -1.38276070046353,
+      "conf.high": 1.75289284927305,
+      "statistic": 0.235047417229313,
+      "p": 0.814795889906803,
+      "p.adj": 0.814795889906803,
+      "p.adj.signif": "ns"
+    }
+  ],
+  "audits": {
+    "S39": {
+      "exact_duplicate_rows_collapsed": 16,
+      "conflicting_keys_excluded": []
+    },
+    "S5": {
+      "exact_duplicate_rows_collapsed": 0,
+      "conflicting_keys_excluded": []
+    },
+    "S4": {
+      "exact_duplicate_rows_collapsed": 0,
+      "conflicting_keys_excluded": []
+    },
+    "S15": {
+      "exact_duplicate_rows_collapsed": 0,
+      "conflicting_keys_excluded": [
+        {
+          "key": [
+            "GF",
+            "R1",
+            "CEC"
+          ],
+          "rows": [
+            62,
+            63
+          ],
+          "values": [
+            3.18525024106216,
+            6.09969067683253
+          ]
+        },
+        {
+          "key": [
+            "GF",
+            "R2",
+            "CEC"
+          ],
+          "rows": [
+            64,
+            65
+          ],
+          "values": [
+            0.890995110333946,
+            1.10088916328943
+          ]
+        },
+        {
+          "key": [
+            "GF",
+            "R3",
+            "CEC"
+          ],
+          "rows": [
+            66,
+            67
+          ],
+          "values": [
+            1.25183211312087,
+            1.41260510594431
+          ]
+        },
+        {
+          "key": [
+            "GF",
+            "R4",
+            "CEC"
+          ],
+          "rows": [
+            68,
+            69
+          ],
+          "values": [
+            1.07163647609249,
+            1.145660952053
+          ]
+        },
+        {
+          "key": [
+            "GF",
+            "R5",
+            "CEC"
+          ],
+          "rows": [
+            70,
+            71
+          ],
+          "values": [
+            1.39988140417457,
+            3.10259661835749
+          ]
+        },
+        {
+          "key": [
+            "GF",
+            "R6",
+            "CEC"
+          ],
+          "rows": [
+            72,
+            73
+          ],
+          "values": [
+            0.568436930783242,
+            0.752362089201878
+          ]
+        },
+        {
+          "key": [
+            "GFA",
+            "R1",
+            "CEC"
+          ],
+          "rows": [
+            50,
+            51
+          ],
+          "values": [
+            2.53348495058401,
+            2.89511228182205
+          ]
+        },
+        {
+          "key": [
+            "GFA",
+            "R2",
+            "CEC"
+          ],
+          "rows": [
+            52,
+            53
+          ],
+          "values": [
+            1.93673796829158,
+            1.95502518315018
+          ]
+        },
+        {
+          "key": [
+            "GFA",
+            "R3",
+            "CEC"
+          ],
+          "rows": [
+            54,
+            55
+          ],
+          "values": [
+            0.877607752438325,
+            1.00113260582011
+          ]
+        },
+        {
+          "key": [
+            "GFA",
+            "R4",
+            "CEC"
+          ],
+          "rows": [
+            56,
+            57
+          ],
+          "values": [
+            1.78815941395391,
+            2.59771955248068
+          ]
+        },
+        {
+          "key": [
+            "GFA",
+            "R5",
+            "CEC"
+          ],
+          "rows": [
+            58,
+            59
+          ],
+          "values": [
+            1.06324041368684,
+            1.15313994321578
+          ]
+        },
+        {
+          "key": [
+            "GFA",
+            "R6",
+            "CEC"
+          ],
+          "rows": [
+            60,
+            61
+          ],
+          "values": [
+            0.872263071895425,
+            1.18854166666667
+          ]
+        }
+      ]
+    },
+    "S37": {
+      "missing_or_nonreconcilable_normalisation_rows": [
+        42,
+        114
+      ],
+      "decision": "Not used for new quantitative inference: wide tissue signals lack units and SI1 scales differ between animals; some SI1 entries equal 1 while others are raw-scale signals."
+    },
+    "S32": {
+      "missing_strain_rows_excluded": [],
+      "decision": "Descriptive technical-replicate signals only; no biological-n inference."
+    }
+  },
+  "kinetic_calibration": {
+    "performed": false,
+    "reason": "The acute table has unresolved protocol/count and published-statistic discrepancies; relative signals lack physical scale, and the existing mechanism requires structural revision. Experimental contrasts are estimated without fitting physiological rates."
+  },
+  "scope": {
+    "EMD2": "Measured microbial transformation and community perturbation evidence",
+    "KCC1": "Metabolic activation-related evidence; not a new assay of electrophilicity",
+    "KCC6_KCC7_KCC8_KCC10": "Require corresponding functional host-response endpoints, not supplied here",
+    "KCC2": "Possible downstream consequence; requires genotoxicity evidence"
+  }
+}

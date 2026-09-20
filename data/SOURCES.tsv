@@ -1,0 +1,7 @@
+path	sha256	url	bundled	automatic
+s_MTBLS3581.txt	02d787786429a03dd77bac58a51944d16fcd8647c3f49db823e006ca1e453e87	http://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS3581/s_MTBLS3581.txt	1	1
+m_MTBLS3581_LC-MS_reverse-phase_metabolite_profiling_v2_maf.tsv	a474e2d84e707cc439fcb14e35d9029fa2fbc306b55b3b0dae13bc20f15f29ad	http://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS3581/m_MTBLS3581_LC-MS_reverse-phase_metabolite_profiling_v2_maf.tsv	0	1
+a_MTBLS3581_LC-MS_negative_reverse-phase_metabolite_profiling.txt	1217d108e5ddf48fc6c84975de0ce76758fb7a34728c756ee27a7e3ec2f05e04	http://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS3581/a_MTBLS3581_LC-MS_negative_reverse-phase_metabolite_profiling.txt	0	1
+a_MTBLS3581_LC-MS_positive_reverse-phase_metabolite_profiling.txt	6ab1a272d0276821599342798a1ae885c9a37d8c0263678cf2873015395af669	http://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS3581/a_MTBLS3581_LC-MS_positive_reverse-phase_metabolite_profiling.txt	0	1
+i_Investigation.txt	8f481d539c6f6408c3701ec21c24d4cd05958e93f982bf14bca13e3e712f27d3	http://ftp.ebi.ac.uk/pub/databases/metabolights/studies/public/MTBLS3581/i_Investigation.txt	0	1
+41586_2024_7754_MOESM4_ESM.xlsx	fe43970068026537c9f95b8132ded29d93397598cc28aab74e381147e341928c	https://doi.org/10.1038/s41586-024-07754-w	0	0
