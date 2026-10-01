@@ -27,7 +27,7 @@ exemplars**. No single agent is asked to carry both.
 |---|---|---|
 | Domain / disposition method | 1 | Zimmermann 2019 *Science* (PMID 30733391) |
 | EMD2–KCC1 **home**, + sequence-level tumours | 1 | Roje 2024 *Nature* (PMID 39085612; MTBLS3581; S3/S42) |
-| EMD2–KCC2 downstream | 2 | Nougayrède 2006 *Science* (PMID 16902142); Wilson 2019 *Science* (PMID 30765538); Pleguezuelos-Manzano 2020 *Nature* (SBS88); Arthur 2012 *Science* (PMID 22903521) |
+| EMD2–KCC2 downstream | 2 | Nougayrède 2006 *Science* (PMID 16902142); Wilson 2019 *Science* (PMID 30765538); Pleguezuelos-Manzano 2020 *Nature* (PMID 32106218); Arthur 2012 *Science* (PMID 22903521) |
 | EMD2–KCC6 **home** | 2 | Wu 2009 *Nat Med* (ETBF, PMID 19701206) |
 | EMD2–KCC7 + KCC8 downstream | 2 | Hezaveh 2022 *Immunity* (PMID 35139353) — *one programme, two adjacent edges* |
 | EMD2–KCC10 downstream | 2 | Wu 2009 ETBF-driven hyperplasia (**not** Roje tumour counts) |
