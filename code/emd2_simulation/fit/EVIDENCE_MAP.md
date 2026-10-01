@@ -96,12 +96,3 @@ consortia — are metabolomic at days to three weeks, not 20-week tumour studies
 - Treating a urinary or urothelial exposure index as genotoxicity or host
   response. In this build the index is exactly proportional to cumulative
   urinary excretion, so it is not even independent of urine.
-
-## Next evidentiary step
-
-S3 and S42 were the only Roje tables adding a **new kind** of evidence without
-changing the KCC definitions, and they are now imported. Tables S6, S7 and S13
-remain unimported: they are further KCC1 disposition data of a kind already
-represented, and S7 in particular is the table behind the intraluminal-ordering
-discrepancy recorded in `FINDINGS.md`. Importing them would extend an existing
-category rather than open a new one.
