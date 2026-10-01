@@ -1,4 +1,4 @@
-# EMD2: minimal reproducibility deposit
+# EMD2: exploratory secondary analysis of published measurements
 
 An exploratory secondary analysis of published measurements of BBN-to-BCPN
 microbial transformation and microbial-community intervention, with
