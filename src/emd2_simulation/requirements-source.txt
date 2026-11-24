@@ -1,0 +1,3 @@
+# Optional import of the original source workbook.
+-r requirements.txt
+openpyxl>=3.1

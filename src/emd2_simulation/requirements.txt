@@ -1,0 +1,7 @@
+numpy>=2.0
+scipy>=1.15
+matplotlib>=3.8
+pandas>=2.0
+
+# Regression tests only.
+pytest>=8.0
